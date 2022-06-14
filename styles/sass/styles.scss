@@ -1,0 +1,19 @@
+// UTILITES
+@import './utilities/variables';
+
+// GLOBAL
+@import './partials/setup';
+@import './partials/baseStyles';
+@import './partials/typography';
+
+// SITE AREAS
+@import './partials/navBar';
+@import './partials/header';
+
+@import './partials/blog';
+@import './partials/contact';
+
+@import './partials/footer';
+
+// MEDIA QUERIES
+@import './partials/mediaQueries';
