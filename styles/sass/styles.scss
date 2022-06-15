@@ -1,19 +1,33 @@
 // UTILITES
 @import './utilities/variables';
 
-// GLOBAL
+// GLOBAL STYLES
 @import './partials/setup';
 @import './partials/baseStyles';
 @import './partials/typography';
 
-// SITE AREAS
+// SITE AREA
+// Global Sections
 @import './partials/navBar';
 @import './partials/header';
-
-@import './partials/blog';
-@import './partials/contact';
-
+@import './partials/commentsForm';
 @import './partials/footer';
+
+
+// Home Page
+@import './partials/home/branding';
+@import './partials/home/gallery';
+@import './partials/home/highlights';
+@import './partials/home/team';
+@import './partials/home/portfolio';
+
+// Blog Page
+@import './partials/blog/blogPost';
+@import './partials/blog/related';
+@import './partials/blog/comments';
+
+//Contact Page
+@import './partials/contact/contact';
 
 // MEDIA QUERIES
 @import './partials/mediaQueries';

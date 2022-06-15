@@ -1,0 +1,73 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-weight: normal;
+    font-size: .7rem;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: .3px;
+    color: $black;
+
+}
+
+h1 {
+    font-size: 1.5rem;
+    letter-spacing: .7px;
+}
+
+.heading {
+    font-family: $headingFont;
+    text-transform: uppercase;
+
+    &--xsmall {
+        font-weight: normal;
+        font-size: .7rem;
+        text-align: center;
+        letter-spacing: .3px;
+    }
+
+    &--small {
+        font-weight: bold;
+        font-size: .7rem;
+        line-height: 24px;
+        letter-spacing: .7px;
+    }
+    
+    &--med {
+        font-size: .9rem;
+        line-height: 24px;
+        letter-spacing: 1.8px;
+    }
+
+    &--large {
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+        letter-spacing: .9rem;
+    }
+    
+    &--xlarge {
+        font-weight: bold;
+        font-size: 1.85rem;
+        text-align: center;
+        letter-spacing: .9rem;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    text-align: left;
+}
+

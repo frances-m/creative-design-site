@@ -1,0 +1,18 @@
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: #000;
+
+    &:focus {
+        left: 0;
+    }
+}

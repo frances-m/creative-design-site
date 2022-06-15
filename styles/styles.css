@@ -305,3 +305,87 @@ td,
 th {
   padding: 0;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: #000;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.7px;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.heading--xsmall {
+  font-weight: normal;
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+.heading--small {
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+.heading--med {
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+}
+.heading--large {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.9rem;
+}
+.heading--xlarge {
+  font-weight: bold;
+  font-size: 1.85rem;
+  text-align: center;
+  letter-spacing: 0.9rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  text-align: left;
+}
