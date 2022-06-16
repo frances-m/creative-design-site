@@ -1,30 +1,33 @@
 header {
-
+    background-size: contain;
     // Nav bar
     .nav-bar {
-        padding: 50px;
+        padding: 46px 0 38px 0;
     }
 
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 135px;
+        padding: 0 175px;
     }
 
     .nav-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 275px;
+        width: 260px;
+    }
+
+    .right-nav {
+        justify-content: space-around;
     }
 
     .link-container {
         position: relative;
-        margin: 0 10px;
 
         a {
-            padding: 0 5px;
+            padding: 0 8px;
         }
 
     }
@@ -42,7 +45,6 @@ header {
         font-size: 1rem;
         height: 40px;
         width: 35px;
-        margin: 0 4px;
     }
 
     .shopping-bag {
@@ -65,6 +67,21 @@ header {
 
 }
 
+.home-header {
+    background-image: url('../../../assets/home-1.jpeg');
+    height: calc((1020/1920)*100vw);
+}
+
+.blog-header {
+    background-image: url('../../../assets/blog-1.jpeg');
+    height: calc((900/1920)*100vw);
+}
+
 .contact-header {
     background-color: $primaryWhite;
+
+    .display-img {
+        background-image: url('../../../assets/contact-1.jpeg');
+        height: calc((224/1920)*100vw);
+    }
 }
