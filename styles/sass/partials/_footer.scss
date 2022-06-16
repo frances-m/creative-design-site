@@ -1,0 +1,88 @@
+footer {
+    background-color: $black;
+    color: $primaryWhite;
+
+    .wrapper {
+
+    }
+}
+
+// Top Footer Section
+.footer-main {
+    padding: 110px 220px;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .container {
+        height: 215px;
+
+        li:first-of-type {
+            list-style: none;
+        }
+
+        h4 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .recent-posts {
+        h4 {
+            text-align: center;
+        }
+
+        li {
+            list-style: disc;
+            margin-bottom: 6px;
+        }
+
+    }
+    
+    .subscribe {
+        text-align: right;
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 225px;
+            // ??? is this a good way to position this input?
+            position: relative;
+            left: 4px;
+            top: .5px;
+        }
+
+        button {
+            background-color: $lightSage;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
+
+.social {
+    text-align: left;
+    font-size: .8rem;
+
+    a {
+        margin-right: 15px;
+    }
+}
+
+.footer-logo {
+    border-top: 1px solid rgba(250, 250, 250, .15);
+    width: 100%;
+    padding: 75px;
+
+    a {
+        font-size: .75rem;
+        letter-spacing: 6px;
+    }
+}

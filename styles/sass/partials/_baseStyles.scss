@@ -27,3 +27,14 @@ button {
     cursor: pointer;
 }
 
+input {
+    height: 40px;
+
+}
+
+input,
+textarea {
+    border: none;
+    font-family: $bodyFont;
+    padding-left: 15px;
+}
