@@ -71,17 +71,67 @@
 
     <main id="main-content">
         <div class="wrapper">
+
+            <!-- Contact Section -->
             <section class="contact">
+                <h2 class="heading heading--bold">Contact Us</h2>
+
+                <!-- Contact Details Section -->
                 <section class="contact-details">
-                    <!--
-                        fa-solid fa-mobile-screen-button
-                        fa-solid fa-location-dot
-                        fa-solid fa-envelope
-                    -->
-                </section>
-                <section class="contact-form"></section>
-            </section>
-        </div>
+                    <h3 class="heading heading--bold">Contact Details</h3>
+                    <p>If you need any help, please contact us or send us an email or go to our forum. We are will ensure that you receive a reply as soon as possible.</p>
+
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p class="heading">Phone</p>
+                            <p><a href="tel:123-456-7890">Phone 01: 123 456 7890</a></p>
+                            <p><a href="tel:345-678-9101">Phone 02: 345 678 9101</a></p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="heading">Address</p>
+                            <p>6591 Orchard Street, Toronto, Ontario</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="heading">Email</p>
+                            <p><a href="mailto:contact@creative.com">contact@creative.com</a></p>
+                            <p><a href="mailto:info@creative.com">info@creative.com</a></p>
+                        </li>
+                    </ul>
+
+                </section> <!-- END contact-details section -->
+
+                <!-- Contact Form Section-->
+                <section class="contact-form">
+                    <h3 class="heading heading--bold">Get in Touch With Us</h3>
+                    <p>If you have any questions, please don't hesitate to send us a message</p>
+
+                    <form action="" class="comment-form">
+
+                        <label class="sr-only" for="name">Enter your name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+
+                        <label class="sr-only" for="email">Enter your email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+
+                        <label class="sr-only" for="subject">Subject (optional)</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject (Optional)">
+
+                        <label for="comment">Add your message...</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                        
+                        <button class="heading heading--button" type="submit">Send Message</button>
+                    </form>
+                </section> <!-- END contact-form section -->
+
+                <!-- Display Image Section -->
+                <section class="displayImg"></section>
+
+            </section> <!-- END contact section -->
+            
+        </div> <!-- END wrapper -->
     </main>
 
     <footer>
