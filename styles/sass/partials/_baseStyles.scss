@@ -1,9 +1,3 @@
-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
 .skip-link {
     position: absolute;
     left: -1000px;
@@ -11,8 +5,25 @@ button {
     z-index: 999;
     background: white;
     color: #000;
-
+    
     &:focus {
         left: 0;
     }
 }
+
+.wrapper {
+    width: 80%;
+    max-width: 1536px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+

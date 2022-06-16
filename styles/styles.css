@@ -306,12 +306,6 @@ th {
   padding: 0;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -322,6 +316,22 @@ button {
 }
 .skip-link:focus {
   left: 0;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 html {
@@ -338,47 +348,33 @@ body {
   color: #333;
 }
 
-h1 {
-  font-size: 1.5rem;
-  letter-spacing: 0.7px;
+h1 .heading {
+  letter-spacing: 0;
 }
 
 .heading {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 1.8px;
 }
-.heading--xsmall {
+.heading--bold {
+  font-weight: bold;
+  font-size: 1.85rem;
+  letter-spacing: 0.9px;
+}
+.heading--nav {
   font-weight: normal;
   font-size: 0.7rem;
   text-align: center;
   letter-spacing: 0.3px;
 }
-.heading--small {
-  font-weight: bold;
+.heading--button {
   font-size: 0.7rem;
+  text-align: center;
   line-height: 24px;
   letter-spacing: 0.7px;
-}
-.heading--med {
-  font-size: 0.9rem;
-  line-height: 24px;
-  letter-spacing: 1.8px;
-}
-.heading--large {
-  font-weight: bold;
-  font-size: 1.4rem;
-  text-align: center;
-  letter-spacing: 0.9rem;
-}
-.heading--xlarge {
-  font-weight: bold;
-  font-size: 1.85rem;
-  text-align: center;
-  letter-spacing: 0.9rem;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 a {

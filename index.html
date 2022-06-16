@@ -17,43 +17,42 @@
 <body>
 
     <!-- Skip Link -->
-	<a href="#mainContent" class="skip-link">Skip to main content</a>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
         <div class="wrapper">
 
             <!-- Main nav bar -->
-            <nav class="navBar">
+            <nav class="nav-bar">
 
                 <!-- Left nav elements-->
-                <div class="leftNav">
+                <div class="left-nav">
                     
-                    <div class="linkContainer currentPage">
-                        <a class="heading heading--xsmall" href="#">Home</a>
+                    <div class="link-container current-page">
+                        <a class="heading heading--nav" href="#">Home</a>
                     </div>
 
-                    <div class="linkContainer">
-                        <a class="heading heading--xsmall" href="./html/blog.html">Blog</a>
+                    <div class="link-container">
+                        <a class="heading heading--nav" href="./html/blog.html">Blog</a>
                     </div>
 
-                    <div class="linkContainer">
-                        <a class="heading heading--xsmall" href="#">Portfolio</a>
+                    <div class="link-container">
+                        <a class="heading heading--nav" href="#">Portfolio</a>
                     </div>
-
                 </div> <!-- END leftNav-->
 
                 <!-- Main heading -->
-                <h1 class="heading bold"><a href="#">Creative</a></h1>
+                <h1 class="heading heading--bold"><a href="#">Creative</a></h1>
 
                 <!-- Right nav elements -->
-                <div class="rightNav">
+                <div class="right-nav">
 
-                    <div class="linkContainer">
-                        <a class="heading heading--xsmall" href="#">SHOP</a>
+                    <div class="link-container">
+                        <a class="heading heading--nav" href="#">Shop</a>
                     </div>
 
-                    <div class="linkContainer">
-                        <a class="heading heading--xsmall" href="./html/contact.html">CONTACT</a>
+                    <div class="link-container">
+                        <a class="heading heading--nav" href="./html/contact.html">Contact</a>
                     </div>
 
                     <button type="button">
@@ -64,31 +63,192 @@
                         <i class="fa-solid fa-bag-shopping"></i>
                         <p>2</p>
                     </button>
-
                 </div> <!-- END rightNav -->
             </nav> 
         </div> <!-- END wrapper -->
     </header>
 
-    <main id="mainContent">
+    <main id="main-content">
+
+        <!-- Branding, Design & Develop Section -->
         <section class="branding">
+            <div class="wrapper">
 
+                <div class="vertical-line"></div>
+
+                <div class="display">
+                    <div class="circle-text">
+                        <img src="./assets/home-circle-text.png" alt="Branding and Website Pros">
+                    </div> <!-- END circle-text -->
+                    <div class="img-container"></div>
+                </div> <!-- END display-->
+                
+                <ul class="text-container">
+                    <li>
+                        <h3 class="heading">Branding</h3>
+                        <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                    </li>
+                    <li>
+                        <h3 class="heading">Design & Develop</h3>
+                        <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                    </li>
+                </ul> 
+            </div> <!-- END wrapper -->
         </section>
 
+        <!-- Gallery Section -->
         <section class="gallery">
+            <div class="wrapper">
 
+                <!-- Gallery Carousel -->
+                <div class="carousel">
+                    <button>
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+
+                    <ul class="carousel-item">
+                        <li>
+                            <!-- ??? In this case, the alt probably wasn't too important but I decided to put this in an img element because presumably the carousel images would be relevant to their associated text -->
+                            <img src="./assets/home-3.jpeg" alt="a collection of design documents. in the center is a documnet featuring illegible text and a photo of a person">
+                        </li>
+                        <li>
+                            <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
+                        </li>
+                    </ul>
+
+                    <button>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div> <!-- END carousel-->
+            </div> <!-- END wrapper -->
         </section>
 
+        <!-- Highlights Section-->
         <section class="highlights">
+            <div class="wrapper">
+                <ul class="highlights-container">
 
+                    <!-- Unique Design-->
+                    <li class="highlight">
+                        <div class="icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <div class="text">
+                            <h3 class="heading">Unique Design</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+                    
+                    <!-- SEO Marketing -->
+                    <li class="highlight">
+                        <div class="icon">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+
+                        <div class="text">
+                            <h3 class="heading">SEO Marketing</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+
+                    <!-- Retina Ready -->
+                    <li class="highlight">
+                        <div class="icon">
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+
+                        <div class="text">
+                            <h3 class="heading">Retina Ready</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+
+                    <!-- Ecommerce Ready -->
+                    <li class="highlight">
+                        <div class="icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <div class="text">
+                            <h3 class="heading">Ecommerce Ready</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+
+                    <!-- Advanced Options -->
+                    <li class="highlight">
+                        <div class="icon">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+
+                        <div class="text">
+                            <h3 class="heading">Advanced Options</h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+
+                    <!-- Customizable -->
+                    <li class="highlight">
+                        <div class="icon">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        
+                        <div class="text">
+                            <h3 class="heading"></h3>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div> <!-- END wrapper -->
         </section>
 
         <section class="team">
+            <div class="wrapper">
+                <div class="vertical-line"></div>
 
+                <h2 class="heading">Meet Our Team</h2>
+
+                <ul class="team-gallery">
+                    <li class="team-players">
+                        <h3 class="heading">Team Players</h3>
+                        <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface</p>
+                    </li>
+                    <!-- ??? Should these be background-images?-->
+                    <li>
+                        <img src="./assets/home-5.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/home-6.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/home-7.jpeg" alt=""></li>
+                    <li>
+                        <img src="./assets/home-8.jpeg" alt=""></li>
+                    <li>
+                        <img src="./assets/home-9.jpeg " alt=""></li>
+                    <li class="work-with">
+                        <a href="#">
+                            <p class="heading">Want to work with us !</p>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- END wrapper -->
         </section>
 
+        <!-- Portfolio Section -->
         <section class="portfolio">
+            <!-- ??? I removed the wrapper here, is that poor practice? -->
+            <div class="text-container">
+                <h2>Drop us a line</h2>
 
+                <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
+
+                <button class="heading heading--button">View Portfolio</button>
+            </div> <!-- END text-container-->
+            
+            <div class="img-container"></div>
         </section>
     </main>
 
@@ -104,7 +264,7 @@
 
                         <ul>
                             <li>
-                                <h4 class="heading heading--small">Contact Us</h4>   
+                                <h4 class="heading">Contact Us</h4>   
                             </li>
                             <li>
                                 <p>6591 Orchard Street, NY 10002, United States</p>
@@ -133,7 +293,7 @@
 
                         <ul>
                             <li>
-                                <h4 class="heading heading--small">Recent Posts</h4>
+                                <h4 class="heading">Recent Posts</h4>
                             </li>
                             <li>
                                 <a href="#">Conversion hackathon partner</a>
@@ -160,7 +320,7 @@
                     <!-- Subscribe Form -->
                     <div class="subscribe container">
 
-                        <h4 class="heading heading--small">Subscribe Now</h4>
+                        <h4 class="heading">Subscribe Now</h4>
 
                         <p>Signup for emails and notifications below.</p>
 
@@ -196,7 +356,7 @@
 
         <section class="footerLogo">
             <p>
-                <a class="heading heading--xsmall" href="#">Creative Agency</a>
+                <a class="heading" href="#">Creative Agency</a>
             </p>
         </section>
     </footer>
