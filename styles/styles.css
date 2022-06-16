@@ -473,12 +473,12 @@ header .shopping-bag p {
 }
 
 .home-header {
-  background-image: url("../../../assets/home-1.jpeg");
+  background-image: url("../assets/home-1.jpeg");
   height: 53.125vw;
 }
 
 .blog-header {
-  background-image: url("../../../assets/blog-1.jpeg");
+  background-image: url("../assets/blog-1.jpeg");
   height: 46.875vw;
 }
 
@@ -486,7 +486,7 @@ header .shopping-bag p {
   background-color: #fff;
 }
 .contact-header .display-img {
-  background-image: url("../../../assets/contact-1.jpeg");
+  background-image: url("../assets/contact-1.jpeg");
   height: 11.6666666667vw;
 }
 

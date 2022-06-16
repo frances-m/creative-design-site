@@ -68,12 +68,12 @@ header {
 }
 
 .home-header {
-    background-image: url('../../../assets/home-1.jpeg');
+    background-image: url('../assets/home-1.jpeg');
     height: calc((1020/1920)*100vw);
 }
 
 .blog-header {
-    background-image: url('../../../assets/blog-1.jpeg');
+    background-image: url('../assets/blog-1.jpeg');
     height: calc((900/1920)*100vw);
 }
 
@@ -81,7 +81,7 @@ header {
     background-color: $primaryWhite;
 
     .display-img {
-        background-image: url('../../../assets/contact-1.jpeg');
+        background-image: url('../assets/contact-1.jpeg');
         height: calc((224/1920)*100vw);
     }
 }
