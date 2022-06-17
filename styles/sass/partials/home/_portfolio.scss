@@ -1,0 +1,37 @@
+.portfolio {
+    display: flex;
+
+    div {
+        width: 50%;
+        height: calc((925 / 960) * 50vw)
+    }
+
+    .text-container {
+        background-color: $lightSage;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+
+        p {
+            width: 490px;
+            opacity: .6;
+            margin-bottom: 50px;
+        }
+
+        button {
+            background-color: $primaryWhite;
+            padding: 0 30px;
+        }
+    }
+
+    .img-container {
+        background-image: url('../assets/home-10.jpeg');
+        background-size: contain;
+    }
+}

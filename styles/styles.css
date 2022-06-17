@@ -332,10 +332,11 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  height: 55px;
 }
 
 input {
-  height: 40px;
+  height: 48px;
 }
 
 input,
@@ -390,6 +391,7 @@ h1 .heading {
   letter-spacing: 0.3px;
 }
 .heading--button {
+  font-weight: bold;
   font-size: 0.7rem;
   text-align: center;
   line-height: 24px;
@@ -546,17 +548,17 @@ footer {
   margin-bottom: 30px;
 }
 .footer-navigation .subscribe input {
-  width: 225px;
+  width: 220px;
   position: relative;
   left: 4px;
-  top: 1px;
 }
 .footer-navigation .subscribe button {
   background-color: #C3DAB7;
-  height: 40px;
-  width: 40px;
+  height: 48px;
+  width: 48px;
   padding: 0;
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .social {
@@ -631,6 +633,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1180px;
   padding: 150px 0 140px 0;
 }
@@ -758,6 +763,7 @@ footer {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   max-width: 1200px;
+  margin-bottom: 190px;
 }
 .team-gallery li {
   margin: 15px 15px;
@@ -799,4 +805,47 @@ footer {
   text-align: center;
   font-size: 0.75rem;
   width: 70%;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.portfolio div {
+  width: 50%;
+  height: 48.1770833333vw;
+}
+.portfolio .text-container {
+  background-color: #C3DAB7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .text-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.portfolio .text-container p {
+  width: 490px;
+  opacity: 0.6;
+  margin-bottom: 50px;
+}
+.portfolio .text-container button {
+  background-color: #fff;
+  padding: 0 30px;
+}
+.portfolio .img-container {
+  background-image: url("../assets/home-10.jpeg");
+  background-size: contain;
 }

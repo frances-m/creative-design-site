@@ -47,19 +47,19 @@ footer {
         }
 
         input {
-            width: 225px;
+            width: 220px;
             // ??? is this a good way to position this input?
             position: relative;
             left: 4px;
-            top: 1px;
         }
 
         button {
             background-color: $lightSage;
-            height: 40px;
-            width: 40px;
+            height: 48px;
+            width: 48px;
             padding: 0;
             margin: 0;
+            font-size: .9rem;
         }
     }
 
