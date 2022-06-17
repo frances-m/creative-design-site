@@ -31,17 +31,30 @@ header {
 
         a {
             padding: 0 8px;
-        }
+            
+            &:focus ~ .hover-style {
+                display: block;
+            }
 
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        &:hover > .hover-style {
+            display: block  ;
+        }
     }
 
 
-    .current-page {
+    .hover-style {
         border-bottom: 1px solid $black;
         height: 1px;
         width: 100%;
         position: absolute;
         top: 55%;
+        display: none;
+
     }
 
     button {

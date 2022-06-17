@@ -58,3 +58,12 @@ ul {
     text-align: left;
 }
 
+.blog-page {
+    h3 {
+        padding-left: 3px;
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+        text-align: left;
+        border-bottom: $borderStyle;
+    }
+}

@@ -17,6 +17,13 @@
     margin: 0 auto;
 }
 
+.blog-page,
+.contact-page {
+    .wrapper {
+        max-width: 1175px;
+    }
+}
+
 img {
     max-width: 100%;
 }

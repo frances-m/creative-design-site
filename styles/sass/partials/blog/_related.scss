@@ -1,0 +1,15 @@
+.related {
+    padding-bottom: 105px;
+
+    .posts {
+        margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin-top: 10px;
+            font-size: .68rem;
+            letter-spacing: 1px;
+        }
+    }
+}
