@@ -14,12 +14,13 @@
         display: flex;
         flex-direction: column;
         flex-flow: wrap;
+        padding-top: 140px;
         justify-content: space-between;
         
         .highlight {
-            width: calc(740px/2);
+            width: calc(735px/2);
             display: flex;
-            margin-bottom: 60px;
+            margin-bottom: 105px;
         }
 
         .icon {

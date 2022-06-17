@@ -549,7 +549,7 @@ footer {
   width: 225px;
   position: relative;
   left: 4px;
-  top: 0.5px;
+  top: 1px;
 }
 .footer-navigation .subscribe button {
   background-color: #C3DAB7;
@@ -680,16 +680,17 @@ footer {
           flex-direction: column;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+  padding-top: 140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .highlights-container .highlight {
-  width: 370px;
+  width: 367.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 105px;
 }
 .highlights-container .icon {
   font-size: 1.5rem;
