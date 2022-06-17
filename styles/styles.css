@@ -622,3 +622,42 @@ footer {
 .branding .text-container h3 {
   margin-bottom: 15px;
 }
+
+.gallery .carousel {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1180px;
+  padding: 150px 0 140px 0;
+}
+.gallery .carousel button {
+  font-size: 2rem;
+}
+.gallery .carousel button:hover {
+  opacity: 0.5;
+}
+.gallery .carousel-item {
+  width: 68%;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 2;
+  opacity: 0.8;
+}
+.gallery .carousel-item img {
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.highlights {
+  background-image: url("../assets/home-4.jpeg");
+  height: 48.1770833333vw;
+}
+
+.team .wrapper {
+  position: relative;
+}

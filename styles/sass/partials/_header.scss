@@ -75,12 +75,12 @@ header {
 
 .home-header {
     background-image: url('../assets/home-1.jpeg');
-    height: calc((1020/1920)*100vw);
+    @include fullbleed-height(1020);
 }
 
 .blog-header {
     background-image: url('../assets/blog-1.jpeg');
-    height: calc((900/1920)*100vw);
+    @include fullbleed-height(900);
 }
 
 .contact-header {
@@ -88,6 +88,6 @@ header {
 
     .display-img {
         background-image: url('../assets/contact-1.jpeg');
-        height: calc((224/1920)*100vw);
+        @include fullbleed-height(224);
     }
 }
