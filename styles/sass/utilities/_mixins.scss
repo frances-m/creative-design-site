@@ -1,3 +1,4 @@
 @mixin fullbleed-height($imgHeight) {
     height: calc(($imgHeight/1920)*100vw);
+    background-size: contain;
 }

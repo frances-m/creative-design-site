@@ -1,5 +1,70 @@
 .team {
     .wrapper {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        z-index: -1;
+    }
+
+    h2 {
+        margin: 140px 0 100px 0;
+        font-size: 1.15rem;
+    }
+
+    &-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        max-width: calc((30px * 4) + (270px * 4));
+
+        li {
+            margin: 15px 15px;
+            height: 270px;
+            //padding: 15px 0;
+        }
+    }
+
+    &-players {
+        background-color: $secondaryWhite;
+        
+        div {
+            width: calc((270px * 2) + 30px);
+            height: 270px;
+            padding-left: 45px;
+        }
+        
+        h3 {
+            padding-top: 100px;
+            margin-bottom: 25px;
+            font-size: .9rem;
+        }
+
+        p {
+            width: 94%;
+            opacity: .6;
+        }
+    }
+
+    &-work-with {
+        width: 270px;
+        
+        a {
+            height: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        p {
+            text-align: center;
+            font-size: .75rem;
+            width: 70%;
+
+        }
     }
 }

@@ -405,9 +405,6 @@ ul {
   text-align: left;
 }
 
-header {
-  background-size: contain;
-}
 header .nav-bar {
   padding: 46px 0 38px 0;
   max-width: 1190px;
@@ -486,11 +483,13 @@ header .shopping-bag p {
 .home-header {
   background-image: url("../assets/home-1.jpeg");
   height: 53.125vw;
+  background-size: contain;
 }
 
 .blog-header {
   background-image: url("../assets/blog-1.jpeg");
   height: 46.875vw;
+  background-size: contain;
 }
 
 .contact-header {
@@ -499,6 +498,7 @@ header .shopping-bag p {
 .contact-header .display-img {
   background-image: url("../assets/contact-1.jpeg");
   height: 11.6666666667vw;
+  background-size: contain;
 }
 
 footer {
@@ -581,6 +581,7 @@ footer {
   background-color: #C3DAB7;
 }
 .branding .wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +592,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 .branding .img-container {
   width: 469px;
@@ -655,7 +655,9 @@ footer {
 
 .highlights {
   background-image: url("../assets/home-4.jpeg");
-  height: 48.1770833333vw;
+  height: 925px;
+  background-size: cover;
+  background-position: center right;
 }
 .highlights .wrapper {
   height: 100%;
@@ -725,4 +727,76 @@ footer {
 
 .team .wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team .vertical-line {
+  z-index: -1;
+}
+.team h2 {
+  margin: 140px 0 100px 0;
+  font-size: 1.15rem;
+}
+.team-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  max-width: 1200px;
+}
+.team-gallery li {
+  margin: 15px 15px;
+  height: 270px;
+}
+.team-players {
+  background-color: #F6F6F6;
+}
+.team-players div {
+  width: 570px;
+  height: 270px;
+  padding-left: 45px;
+}
+.team-players h3 {
+  padding-top: 100px;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+.team-players p {
+  width: 94%;
+  opacity: 0.6;
+}
+.team-work-with {
+  width: 270px;
+}
+.team-work-with a {
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team-work-with p {
+  text-align: center;
+  font-size: 0.75rem;
+  width: 70%;
 }
