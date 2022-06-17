@@ -962,6 +962,7 @@ footer {
 
 .blog-content {
   margin: 60px 3px 0 3px;
+  padding-bottom: 10px;
 }
 .blog-content p {
   opacity: 0.6;
@@ -977,7 +978,7 @@ footer {
 .blog-content p:first-of-type {
   opacity: 1;
   font-weight: 800;
-  letter-spacing: 0.23px;
+  letter-spacing: 0.2px;
 }
 
 .blog-share {
@@ -1012,4 +1013,10 @@ footer {
   margin-top: 10px;
   font-size: 0.68rem;
   letter-spacing: 1px;
+}
+
+.contact-page .display-img {
+  background-image: url("../assets/contact-2.jpeg");
+  height: 35.8333333333vw;
+  background-size: contain;
 }
