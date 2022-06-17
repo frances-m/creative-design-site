@@ -38,3 +38,11 @@ textarea {
     font-family: $bodyFont;
     padding-left: 15px;
 }
+
+.vertical-line {
+    width: 1px;
+    height: 160px;
+    position: absolute;
+    top: calc((-160px/2));
+    background-color: rgba(55, 55, 55, .4);
+}
