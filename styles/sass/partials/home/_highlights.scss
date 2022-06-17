@@ -2,4 +2,53 @@
     background-image: url('../assets/home-4.jpeg');
     @include fullbleed-height(925);
     
+    .wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &-container {
+        width: 770px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: space-between;
+        
+        .highlight {
+            width: calc(740px/2);
+            display: flex;
+            margin-bottom: 60px;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 67px;
+            height: 67px;
+            margin-top: 5px;
+            border: 3px solid $black;
+            border-radius: 50%;
+        }
+
+        .text {
+            margin-left: 38px;
+
+            h3 {
+                letter-spacing: .4px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                opacity: .6;
+                font-size: .65rem;
+            }
+        }
+    }
 }
