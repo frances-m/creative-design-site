@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="../styles/styles.css">
 
@@ -86,25 +86,31 @@
                 <!-- Contact Details Section -->
                 <section class="contact-details">
                     <h3 class="heading heading--bold">Contact Details</h3>
-                    <p>If you need any help, please contact us or send us an email or go to our forum. We are will ensure that you receive a reply as soon as possible.</p>
+                    <p class="help-message">If you need any help, please contact us or send us an email or go to our forum. <br> We will ensure that you receive a reply as soon as possible.</p>
 
                     <ul class="contact-info">
                         <li>
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <p class="heading">Phone</p>
-                            <p><a href="tel:123-456-7890">Phone 01: 123 456 7890</a></p>
-                            <p><a href="tel:345-678-9101">Phone 02: 345 678 9101</a></p>
+                            <div>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <h4 class="heading">Phone</h4>
+                                <p><a href="tel:123-456-7890">Phone 01: 123 456 7890</a></p>
+                                <p><a href="tel:345-678-9101">Phone 02: 345 678 9101</a></p>
+                            </div>    
                         </li>
                         <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p class="heading">Address</p>
-                            <p>6591 Orchard Street, Toronto, Ontario</p>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h4 class="heading">Address</h4>
+                                <p>6591 Orchard Street, Toronto, Ontario</p>
+                            </div>    
                         </li>
                         <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <p class="heading">Email</p>
-                            <p><a href="mailto:contact@creative.com">contact@creative.com</a></p>
-                            <p><a href="mailto:info@creative.com">info@creative.com</a></p>
+                            <div>
+                                <i class="fa-solid fa-envelope"></i>
+                                <h4 class="heading">Email</h4>
+                                <p><a href="mailto:contact@creative.com">contact@creative.com</a></p>
+                                <p><a href="mailto:info@creative.com">info@creative.com</a></p>
+                            </div>
                         </li>
                     </ul>
 
@@ -113,7 +119,7 @@
                 <!-- Contact Form Section-->
                 <section class="contact-form">
                     <h3 class="heading heading--bold">Get in Touch With Us</h3>
-                    <p>If you have any questions, please don't hesitate to send us a message</p>
+                    <p class="help-message">If you have any questions, please don't hesitate to send us a message</p>
 
                     <form action="" class="comment-form">
 
@@ -126,8 +132,8 @@
                         <label class="sr-only" for="subject">Subject (optional)</label>
                         <input type="text" name="subject" id="subject" placeholder="Subject (Optional)">
 
-                        <label for="comment">Add your message...</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                        <label class="sr-only" for="comment">Add your message</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Add your message..."></textarea>
                         
                         <button class="heading heading--button" type="submit">Send Message</button>
                     </form>
@@ -136,7 +142,7 @@
         </div> <!-- END wrapper -->
 
         <!-- Display Image Section -->
-        <section class="display-img"></section>
+        <section class="contact-display-img"></section>
     </main>
 
     <footer>
@@ -147,7 +153,7 @@
                 <div class="footer-navigation">
 
                     <!-- Contact Info -->
-                    <div class="contact-info container">
+                    <div class="footer-contact-info container">
 
                         <ul>
                             <li>
@@ -176,7 +182,7 @@
                     </div>
                     
                     <!-- Recent Posts -->
-                    <nav class="recent-posts container">
+                    <nav class="footer-recent-posts container">
 
                         <ul>
                             <li>
@@ -205,7 +211,7 @@
                     </nav>
 
                     <!-- Subscribe Form -->
-                    <div class="subscribe container">
+                    <div class="footer-subscribe container">
 
                         <h4 class="heading">Subscribe Now</h4>
 

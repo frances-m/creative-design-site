@@ -412,12 +412,41 @@ ul {
   text-align: left;
 }
 
-.blog-page h3 {
+.blog-page h2,
+.contact-page h2 {
+  font-size: 3rem;
+  letter-spacing: 1.6px;
+  text-align: left;
+  line-height: 60px;
+}
+.blog-page h3,
+.contact-page h3 {
   padding-left: 3px;
   font-size: 1.5rem;
   padding-bottom: 30px;
   text-align: left;
+}
+
+.blog-page h3 {
   border-bottom: 1px solid rgba(55, 55, 55, 0.2);
+}
+.blog-page h4,
+.blog-page p.heading {
+  font-size: 0.85rem;
+  letter-spacing: 0.2px;
+}
+
+.contact-page h2 {
+  line-height: 70px;
+}
+.contact-page h3 {
+  font-size: 0.89rem;
+  font-weight: 600;
+}
+.contact-page h4 {
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 7px;
 }
 
 header .nav-bar {
@@ -602,9 +631,10 @@ header .shopping-bag p {
   border-bottom: 1px solid #333;
   height: 35px;
   margin: 50px 0 190px 0;
+  font-weight: normal;
 }
 .comment-form button:hover {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 footer {
@@ -638,25 +668,25 @@ footer {
 .footer-navigation .container h4 {
   margin-bottom: 40px;
 }
-.footer-navigation .recent-posts h4 {
+.footer-navigation .footer-recent-posts h4 {
   text-align: center;
 }
-.footer-navigation .recent-posts li {
+.footer-navigation .footer-recent-posts li {
   list-style: disc;
   margin-bottom: 6px;
 }
-.footer-navigation .subscribe {
+.footer-navigation .footer-subscribe {
   text-align: right;
 }
-.footer-navigation .subscribe p {
+.footer-navigation .footer-subscribe p {
   margin-bottom: 30px;
 }
-.footer-navigation .subscribe input {
+.footer-navigation .footer-subscribe input {
   width: 220px;
   position: relative;
   left: 4px;
 }
-.footer-navigation .subscribe button {
+.footer-navigation .footer-subscribe button {
   background-color: #C3DAB7;
   height: 48px;
   width: 48px;
@@ -958,16 +988,7 @@ footer {
   padding-bottom: 115px;
 }
 .blog-post h2 {
-  font-size: 3rem;
-  letter-spacing: 1.6px;
-  text-align: left;
   margin-top: 140px;
-  line-height: 60px;
-}
-.blog-post h4,
-.blog-post p.heading {
-  font-size: 0.85rem;
-  letter-spacing: 0.2px;
 }
 .blog-post .breadcrumb {
   margin-top: 40px;
@@ -1078,6 +1099,25 @@ footer {
   font-size: 0.8rem;
 }
 
+.related {
+  padding-bottom: 105px;
+}
+.related .posts {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+.related .posts p {
+  margin-top: 10px;
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+}
+
 .blog-posted-comments {
   padding-bottom: 25px;
 }
@@ -1130,7 +1170,6 @@ footer {
 }
 .blog-posted-comments p.heading {
   font-size: 0.7rem;
-  letter-spacing: 0.2px;
 }
 .blog-posted-comments .reply-btn {
   font-family: "Open Sans", sans-serif;
@@ -1150,26 +1189,81 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
-.related {
-  padding-bottom: 105px;
+.contact {
+  position: relative;
 }
-.related .posts {
-  margin-top: 55px;
+.contact h2 {
+  width: 350px;
+  margin-left: 3px;
+  position: absolute;
+  top: -145px;
+}
+.contact h2::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  margin-bottom: 40px;
+}
+.contact .help-message {
+  text-align: left;
+  opacity: 0.5;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 45px;
+}
+.contact-details {
+  padding-top: 200px;
+  margin-left: 3px;
+}
+.contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 15px;
+  width: 100%;
+  margin-bottom: 55px;
 }
-.related .posts p {
-  margin-top: 10px;
-  font-size: 0.68rem;
-  letter-spacing: 1px;
+.contact-info li {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 225px;
+  border-right: 1px solid rgba(55, 55, 55, 0.2);
 }
-
-.contact-page .display-img {
+.contact-info li:last-of-type {
+  border-right: none;
+}
+.contact-info div {
+  width: 64%;
+}
+.contact-info i {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.contact-info h4 {
+  margin-bottom: 10px;
+}
+.contact-info p {
+  opacity: 0.8;
+  font-size: 0.65rem;
+}
+.contact-form h3 {
+  padding-bottom: 20px;
+}
+.contact-form button {
+  margin-bottom: 115px;
+}
+.contact-display-img {
   background-image: url("../assets/contact-2.jpeg");
   height: 35.8333333333vw;
   background-size: contain;

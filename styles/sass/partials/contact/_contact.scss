@@ -1,7 +1,85 @@
-.contact-page {
-    .display-img {
+.contact {
+    position: relative;
+    h2 {
+        width: 350px;
+        margin-left: 3px;
+        position: absolute;
+        top: -145px;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 3px;
+            background-color: $black;
+            display: block;
+            margin-bottom: 40px;
+        }
+    }
+
+    .help-message {
+        text-align: left;
+        opacity: .5;
+        font-weight: 500;
+        line-height: 27px;
+        margin-bottom: 45px;
+    }
+
+    &-details {
+        padding-top: 200px;
+        margin-left: 3px;
+    }
+
+    &-info {
+        display: flex;
+        width: 100%;
+        margin-bottom: 55px;
+        
+        li {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 225px;
+            border-right: $borderStyle;
+
+            &:last-of-type {
+                border-right: none;
+            }
+        }
+
+        div {
+            width: 64%;
+        }
+        
+        i {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            opacity: .8;
+            font-size: .65rem;
+        }
+    }
+
+    &-form {
+        h3 {
+            padding-bottom: 20px;
+        }
+
+        button {
+            margin-bottom: 115px;
+        }
+    }
+
+    &-display-img {
         background-image: url('../assets/contact-2.jpeg');
         @include fullbleed-height(688);
-        
     }
 }

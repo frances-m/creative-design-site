@@ -50,9 +50,10 @@
         border-bottom: 1px solid $black;
         height: 35px;
         margin: 50px 0 190px 0;
+        font-weight: normal;
 
         &:hover {
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 }
