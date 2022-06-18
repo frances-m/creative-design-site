@@ -1,0 +1,58 @@
+.comment-form {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+    input,
+    textarea {
+        border-bottom: $borderStyle;
+        letter-spacing: .4px;
+        padding-left: 4px;
+        margin-left: 3px;
+        
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+            border-color: $black;
+
+            // ??? For some reason, carets aren't appearing on left-aliged inputs in Firefox
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+
+        &::placeholder {
+            opacity: .6;
+        }
+    }
+
+    label {
+        letter-spacing: .4px;
+        opacity: .6;
+    }
+
+    input {
+        width: 31.5%;
+        height: 44px;
+        margin-bottom: 33px;
+    }
+
+    textarea {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button {
+        font-size: .7rem;
+        letter-spacing: .2px;
+        border-bottom: 1px solid $black;
+        height: 35px;
+        margin: 50px 0 190px 0;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}

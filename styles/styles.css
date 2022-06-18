@@ -526,6 +526,87 @@ header .shopping-bag p {
   background-size: contain;
 }
 
+.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+.comment-form input,
+.comment-form textarea {
+  border-bottom: 1px solid rgba(55, 55, 55, 0.2);
+  letter-spacing: 0.4px;
+  padding-left: 4px;
+  margin-left: 3px;
+}
+.comment-form input:focus, .comment-form input:focus-visible,
+.comment-form textarea:focus,
+.comment-form textarea:focus-visible {
+  outline: none;
+  border-color: #333;
+}
+.comment-form input:focus::-webkit-input-placeholder, .comment-form input:focus-visible::-webkit-input-placeholder, .comment-form textarea:focus::-webkit-input-placeholder, .comment-form textarea:focus-visible::-webkit-input-placeholder {
+  opacity: 1;
+}
+.comment-form input:focus::-moz-placeholder, .comment-form input:focus-visible::-moz-placeholder, .comment-form textarea:focus::-moz-placeholder, .comment-form textarea:focus-visible::-moz-placeholder {
+  opacity: 1;
+}
+.comment-form input:focus:-ms-input-placeholder, .comment-form input:focus-visible:-ms-input-placeholder, .comment-form textarea:focus:-ms-input-placeholder, .comment-form textarea:focus-visible:-ms-input-placeholder {
+  opacity: 1;
+}
+.comment-form input:focus::-ms-input-placeholder, .comment-form input:focus-visible::-ms-input-placeholder, .comment-form textarea:focus::-ms-input-placeholder, .comment-form textarea:focus-visible::-ms-input-placeholder {
+  opacity: 1;
+}
+.comment-form input:focus::placeholder, .comment-form input:focus-visible::placeholder,
+.comment-form textarea:focus::placeholder,
+.comment-form textarea:focus-visible::placeholder {
+  opacity: 1;
+}
+.comment-form input::-webkit-input-placeholder, .comment-form textarea::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+.comment-form input::-moz-placeholder, .comment-form textarea::-moz-placeholder {
+  opacity: 0.6;
+}
+.comment-form input:-ms-input-placeholder, .comment-form textarea:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.comment-form input::-ms-input-placeholder, .comment-form textarea::-ms-input-placeholder {
+  opacity: 0.6;
+}
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+  opacity: 0.6;
+}
+.comment-form label {
+  letter-spacing: 0.4px;
+  opacity: 0.6;
+}
+.comment-form input {
+  width: 31.5%;
+  height: 44px;
+  margin-bottom: 33px;
+}
+.comment-form textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+.comment-form button {
+  font-size: 0.7rem;
+  letter-spacing: 0.2px;
+  border-bottom: 1px solid #333;
+  height: 35px;
+  margin: 50px 0 190px 0;
+}
+.comment-form button:hover {
+  font-weight: bold;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -1080,6 +1161,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 15px;
 }
 .related .posts p {
   margin-top: 10px;
