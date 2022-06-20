@@ -1,4 +1,4 @@
-.related {
+.blog-related {
     padding-bottom: 105px;
 
     .posts {
@@ -6,6 +6,14 @@
         display: flex;
         justify-content: space-between;
         gap: 15px;
+
+        img {
+            transition: .3s;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+        }
 
         p {
             margin-top: 10px;

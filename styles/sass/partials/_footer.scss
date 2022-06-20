@@ -34,7 +34,7 @@ footer {
 
         li {
             list-style: disc;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
         }
 
     }
@@ -43,7 +43,7 @@ footer {
         text-align: right;
 
         p {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         input {
@@ -51,6 +51,19 @@ footer {
             // ??? is this a good way to position this input?
             position: relative;
             left: 4px;
+            top: -.5px;
+
+            &:focus-visible {
+                outline: none;
+
+                &::placeholder {
+                    opacity: 1;
+                }
+            }
+            
+            &:focus {
+                outline: auto;
+            }
         }
 
         button {

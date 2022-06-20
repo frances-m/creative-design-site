@@ -17,7 +17,6 @@
             outline: none;
             border-color: $black;
 
-            // ??? For some reason, carets aren't appearing on left-aliged inputs in Firefox
             &::placeholder {
                 opacity: 1;
             }
@@ -53,7 +52,7 @@
         font-weight: normal;
 
         &:hover {
-            font-weight: 600;
+            font-weight:500;
         }
     }
 }

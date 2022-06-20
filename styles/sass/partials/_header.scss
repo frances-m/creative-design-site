@@ -31,9 +31,10 @@ header {
 
         a {
             padding: 0 8px;
+            z-index: 2;
             
             &:focus ~ .hover-style {
-                display: block;
+                opacity: 1;
             }
 
             &:focus {
@@ -42,7 +43,7 @@ header {
         }
         
         &:hover > .hover-style {
-            display: block  ;
+            opacity: 1;
         }
     }
 
@@ -53,8 +54,9 @@ header {
         width: 100%;
         position: absolute;
         top: 55%;
-        display: none;
-
+        opacity: 0;
+        z-index: 1;
+        transition: opacity .4s;
     }
 
     button {
@@ -100,6 +102,8 @@ header {
 
     .display-img {
         background-image: url('../assets/contact-1.jpeg');
-        @include fullbleed-height(224);
+        height: 224px;
+        background-size: cover;
+        background-position: center;
     }
 }

@@ -1,4 +1,4 @@
-.portfolio {
+.home-portfolio {
     display: flex;
 
     div {
@@ -19,7 +19,8 @@
         }
 
         p {
-            width: 490px;
+            max-width: 490px;
+            width: 85%;
             opacity: .6;
             margin-bottom: 50px;
         }
@@ -27,6 +28,12 @@
         button {
             background-color: $primaryWhite;
             padding: 0 30px;
+            transition: .3s;
+
+            &:hover {
+                color: $secondaryWhite;
+                background-color: $black;
+            }
         }
     }
 

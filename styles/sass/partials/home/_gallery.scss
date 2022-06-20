@@ -1,4 +1,4 @@
-.gallery {
+.home-gallery {
 
     .carousel {
         margin: 0 auto;
@@ -7,9 +7,10 @@
         align-items: center;
         max-width: 1180px;
         padding: 150px 0 140px 0;
-
+        
         button {
             font-size: 2rem;
+            transition: opacity .2s;
 
             &:hover {
                 opacity: .5;

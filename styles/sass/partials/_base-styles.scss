@@ -12,13 +12,14 @@
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     max-width: 1536px;
     margin: 0 auto;
 }
 
 .blog-page,
 .contact-page {
+
     .wrapper {
         max-width: 1175px;
     }
@@ -52,4 +53,28 @@ textarea {
     position: absolute;
     top: calc((-160px/2));
     background-color: rgba(55, 55, 55, .4);
+}
+
+
+// I noticed the full-bleed images looked had weird spacing issues underneath them in Chrome, and some searching brought me to this Stack Overflow answer by Nisharg Shah, which I've edited a bit. 
+// https://stackoverflow.com/questions/55918304/css-for-default-scrollbar-of-chrome
+// Mostly, I was just doing this out of curiosity, but I'd be intested in improving the scrollbar using js later on. 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+// Track 
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+    background: $lightSage; 
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover{
+    background: $black; 
 }
