@@ -1,8 +1,10 @@
 .home-highlights {
     background-image: url('../assets/home-4.jpeg');
-    height: 925px;
-    background-size: cover;
-    background-position: center right;
+    // height: 925px;
+    @include fullbleed-height(925);
+    //background-size: contain;
+    background-repeat: no-repeat;
+    //background-position: center right;
     
     
     .wrapper {

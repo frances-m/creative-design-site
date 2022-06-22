@@ -465,29 +465,6 @@ ul {
   letter-spacing: 7px;
 }
 
-@-webkit-keyframes ease-font-weight {
-  25% {
-    font-weight: 500;
-  }
-  50% {
-    font-weight: 600;
-  }
-  75% {
-    font-weight: 800;
-  }
-}
-
-@keyframes ease-font-weight {
-  25% {
-    font-weight: 500;
-  }
-  50% {
-    font-weight: 600;
-  }
-  75% {
-    font-weight: 800;
-  }
-}
 header .nav-bar {
   padding: 46px 0 38px 0;
   max-width: 1190px;
@@ -862,9 +839,9 @@ footer {
 
 .home-highlights {
   background-image: url("../assets/home-4.jpeg");
-  height: 925px;
-  background-size: cover;
-  background-position: center right;
+  height: 48.1770833333vw;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .home-highlights .wrapper {
   height: 100%;
@@ -1366,10 +1343,4 @@ footer {
   background-image: url("../assets/contact-2.jpeg");
   height: 35.8333333333vw;
   background-size: contain;
-}
-
-@media only screen and (max-width: 1224px) {
-  .home-team-gallery {
-    max-width: 820px;
-  }
 }
