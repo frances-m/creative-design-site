@@ -1,36 +1,114 @@
-// @media only screen and (min-width: 1920px) {
-//     .contact-header {
-//         .display-img {
-//             @include fullbleed-height(224);
-//             background-size: contain;
-//         }
-//     }
-// }
+@media (max-width: 1625px) {
+    .home-highlights {
+        height: 925px;
+        background-size: cover;
 
-@media only screen and (max-width: 1224px) {
-    
-    .home-branding {
-        
+        &-container {
+            background-color: rgba($primaryWhite, .96);
+            padding: 50px;
+            width: 925px;
+            gap: 60px;
+        }
+
+        .highlight {
+            margin-bottom: 0;
+        }
     }
+}
+
+@media (max-width: 1224px) {
     
     .home-team {
         &-gallery {
+            grid-template: repeat(3, 270px) / repeat(3, 270px);
             
-
             li {
                 
             }
         }
 
         &-players {
-            
+            grid-column: 1 / span 3;
             
             div {
-                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+                height: 100%;
+                padding-left: 0;
+                margin: 0 auto;
+                text-align: center;
             }
 
             h3 {
-                
+                padding-top: 0px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1025px) {
+    .footer-main {
+        padding-bottom: 80px;
+    }
+
+    .footer-navigation {
+        justify-content: space-between;
+        align-items:flex-start;
+        max-width: 655px;
+        margin: 0 auto;
+    
+        .container {
+            margin-bottom: 80px;
+        }
+
+        .footer-subscribe {
+            width: 100%;
+            margin-bottom: 0px;
+            text-align: left;
+            
+
+            h4 {
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            input {
+                width: 90%;
+            }
+        }
+
+    }
+
+    .footer-social {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        .nav-container {
+            width: 227px;
+        }
+    }
+
+    .home-team {
+        &-gallery {
+            grid-template: repeat(4, 270px) / repeat(2, 270px);
+        }
+
+        &-players {
+            grid-column: 1 / span 2;
+
+            div {
+                width: 90%;
             }
         }
     }

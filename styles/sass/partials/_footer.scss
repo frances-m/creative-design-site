@@ -14,6 +14,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     .container {
         height: 215px;
@@ -78,7 +79,7 @@ footer {
 
 }
 
-.social {
+.footer-social {
     text-align: left;
     font-size: .8rem;
 

@@ -1,9 +1,6 @@
 .home-team {
     .wrapper {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 98%;
     }
 
@@ -17,42 +14,33 @@
     }
 
     &-gallery {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: wrap;
-        max-width: calc((30px * 4) + (270px * 4));
+        display: grid;
+        grid-template: repeat(2, 270px) / repeat(4, 270px);
+        gap: 30px;
         margin-bottom: 190px;
-
-        li {
-            margin: 15px 15px;
-            height: 270px;
-        }
     }
 
     &-players {
         background-color: $secondaryWhite;
-        
+        grid-column: 1 / span 2;
+
         div {
-            width: calc((270px * 2) + 30px);
-            height: 270px;
             padding-left: 45px;
         }
         
+        p {
+            width: 94%;
+        }
+
         h3 {
             padding-top: 100px;
             margin-bottom: 25px;
             font-size: .9rem;
         }
-
-        p {
-            width: 94%;
-            opacity: .6;
-        }
+        
     }
 
     &-work-with {
-        width: 270px;
         transition: .5s;
 
         &:hover {
@@ -78,4 +66,5 @@
             transition: .3s;
         }
     }
+
 }

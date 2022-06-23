@@ -479,6 +479,9 @@ header .nav-bar {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header .nav-bar--mobile {
+  display: none;
+}
 header h1 {
   padding: 0 10px;
 }
@@ -679,6 +682,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer-navigation .container {
   height: 215px;
@@ -738,11 +743,11 @@ footer {
   font-size: 0.9rem;
 }
 
-.social {
+.footer-social {
   text-align: left;
   font-size: 0.8rem;
 }
-.social a {
+.footer-social a {
   margin-right: 15px;
 }
 
@@ -866,7 +871,7 @@ footer {
           flex-direction: column;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  padding-top: 140px;
+  padding-top: 140px 0 0 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -911,16 +916,6 @@ footer {
 
 .home-team .wrapper {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 98%;
 }
 .home-team .vertical-line {
@@ -931,43 +926,27 @@ footer {
   font-size: 1.15rem;
 }
 .home-team-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  max-width: 1200px;
+  display: grid;
+  grid-template: repeat(2, 270px)/repeat(4, 270px);
+  gap: 30px;
   margin-bottom: 190px;
-}
-.home-team-gallery li {
-  margin: 15px 15px;
-  height: 270px;
 }
 .home-team-players {
   background-color: #F6F6F6;
+  grid-column: 1/span 2;
 }
 .home-team-players div {
-  width: 570px;
-  height: 270px;
   padding-left: 45px;
+}
+.home-team-players p {
+  width: 94%;
 }
 .home-team-players h3 {
   padding-top: 100px;
   margin-bottom: 25px;
   font-size: 0.9rem;
 }
-.home-team-players p {
-  width: 94%;
-  opacity: 0.6;
-}
 .home-team-work-with {
-  width: 270px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1343,4 +1322,104 @@ footer {
   background-image: url("../assets/contact-2.jpeg");
   height: 35.8333333333vw;
   background-size: contain;
+}
+
+@media (max-width: 1625px) {
+  .home-highlights {
+    height: 925px;
+    background-size: cover;
+  }
+  .home-highlights-container {
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 50px;
+    width: 925px;
+    gap: 60px;
+  }
+  .home-highlights .highlight {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1224px) {
+  .home-team-gallery {
+    grid-template: repeat(3, 270px)/repeat(3, 270px);
+  }
+  .home-team-players {
+    grid-column: 1/span 3;
+  }
+  .home-team-players div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+    height: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home-team-players h3 {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 1025px) {
+  .footer-main {
+    padding-bottom: 80px;
+  }
+
+  .footer-navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 655px;
+    margin: 0 auto;
+  }
+  .footer-navigation .container {
+    margin-bottom: 80px;
+  }
+  .footer-navigation .footer-subscribe {
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .footer-navigation .footer-subscribe h4 {
+    margin-bottom: 5px;
+  }
+  .footer-navigation .footer-subscribe p {
+    margin-bottom: 20px;
+  }
+  .footer-navigation .footer-subscribe input {
+    width: 90%;
+  }
+
+  .footer-social {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 920px) {
+  header .nav-container {
+    width: 227px;
+  }
+
+  .home-team-gallery {
+    grid-template: repeat(4, 270px)/repeat(2, 270px);
+  }
+  .home-team-players {
+    grid-column: 1/span 2;
+  }
+  .home-team-players div {
+    width: 90%;
+  }
 }
