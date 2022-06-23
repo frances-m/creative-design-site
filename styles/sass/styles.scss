@@ -6,6 +6,7 @@
 @import './partials/setup';
 @import './partials/base-styles';
 @import './partials/typography';
+@import './partials/animations';
 
 // SITE AREA
 // Global Sections
@@ -23,8 +24,8 @@
 
 // Blog Page
 @import './partials/blog/blog-post';
-@import './partials/blog/related';
-@import './partials/blog/comments';
+@import './partials/blog/blog-related';
+@import './partials/blog/blog-comments';
 
 //Contact Page
 @import './partials/contact/contact';

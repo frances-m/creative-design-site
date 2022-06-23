@@ -465,6 +465,29 @@ ul {
   letter-spacing: 7px;
 }
 
+@-webkit-keyframes delay-opacity {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes delay-opacity {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header .nav-bar {
   padding: 46px 0 38px 0;
   max-width: 1190px;
@@ -529,10 +552,13 @@ header .hover-style {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
-header button {
-  font-size: 1.05rem;
+header button,
+header label {
   height: 36px;
   width: 36px;
+}
+header i {
+  font-size: 1.05rem;
 }
 header .shopping-bag {
   position: relative;
@@ -846,7 +872,6 @@ footer {
   background-image: url("../assets/home-4.jpeg");
   height: 48.1770833333vw;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 .home-highlights .wrapper {
   height: 100%;
@@ -871,7 +896,7 @@ footer {
           flex-direction: column;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  padding-top: 140px 0 0 0;
+  padding-top: 140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -915,6 +940,16 @@ footer {
 }
 
 .home-team .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: 98%;
 }
@@ -1186,7 +1221,7 @@ footer {
   margin-bottom: 30px;
 }
 .blog-posted-comments .img-container {
-  margin-right: 33px;
+  margin: 0 33px 0 0;
 }
 .blog-posted-comments .img-container img {
   width: 78px;
@@ -1340,6 +1375,14 @@ footer {
   }
 }
 @media (max-width: 1224px) {
+  .contact-header .display-img {
+    height: 150px;
+  }
+
+  .contact h2 {
+    top: -85px;
+  }
+
   .home-team-gallery {
     grid-template: repeat(3, 270px)/repeat(3, 270px);
   }
@@ -1370,7 +1413,188 @@ footer {
     padding-top: 0px;
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1025px) and (max-width: 920px) {
+  header .nav-container {
+    width: 227px;
+  }
+
+  .blog-header {
+    height: 500px;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  .contact-header .display-img {
+    background-position: 32% 50%;
+  }
+
+  .home-team-gallery {
+    grid-template: repeat(4, 270px)/repeat(2, 270px);
+  }
+  .home-team-players {
+    grid-column: 1/span 2;
+  }
+  .home-team-players div {
+    width: 90%;
+  }
+}
+@media (max-width: 1025px) and (max-width: 804px) {
+  header .nav-bar--desktop {
+    display: none;
+  }
+  header .nav-bar--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .nav-container {
+    width: 140px;
+  }
+  header h1 {
+    height: 36px;
+  }
+  header .right-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    height: 36px;
+  }
+  header button,
+header label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+  }
+  header .shopping-bag p {
+    bottom: 6px;
+    right: 8px;
+  }
+  header .slide-out-nav {
+    width: 100vw;
+    min-height: 100vh;
+    left: -1000px;
+    top: 0;
+    overflow: visible;
+    position: fixed;
+    background-color: #333;
+    z-index: 3;
+  }
+  header .slide-out-nav ul {
+    position: relative;
+    top: 180px;
+    left: 50px;
+    opacity: 0;
+    color: #F6F6F6;
+  }
+  header .slide-out-nav li {
+    padding: 0 0 25px 0;
+  }
+  header .slide-out-nav a {
+    font-size: 1.3rem;
+  }
+  header .slide-out-nav,
+header h1,
+header button,
+header label,
+header .shopping-bag p {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+  }
+  header input[type=checkbox] {
+    opacity: 0 !important;
+    position: absolute !important;
+  }
+  header input[type=checkbox]:checked ~ .slide-out-nav {
+    left: 0;
+  }
+  header input[type=checkbox]:checked ~ section ul {
+    -webkit-animation: delay-opacity 0.75s ease-in-out;
+            animation: delay-opacity 0.75s ease-in-out;
+    opacity: 1;
+  }
+  header input[type=checkbox]:checked ~ div label, header input[type=checkbox]:checked ~ div button, header input[type=checkbox]:checked ~ h1 {
+    z-index: 4;
+    color: #F6F6F6;
+  }
+  header input[type=checkbox]:checked ~ div button p {
+    color: #333;
+  }
+
+  .contact-header .display-img {
+    background-position: 20% 50%;
+  }
+
+  .comment-form button {
+    margin-bottom: 100px;
+  }
+
+  .blog-info {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    border-bottom: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  .blog-info .attr {
+    margin: 0 0 70px 0;
+    width: 98%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-bottom: 1px solid rgba(55, 55, 55, 0.2);
+    padding-bottom: 25px;
+  }
+  .blog-info .attr li {
+    margin-right: 40px;
+  }
+  .blog-info .attr li:first-of-type {
+    margin-left: 15px;
+  }
+  .blog-info .attr li:last-of-type {
+    margin-right: 0;
+  }
+  .blog-info .attr p {
+    font-size: 0.6rem;
+  }
+
+  .blog-content {
+    margin-top: 0px;
+  }
+
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-info li {
+    border-right: none;
+    border-bottom: 1px solid rgba(55, 55, 55, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 236px;
+  }
+  .contact-info li:last-of-type {
+    border-bottom: none;
+  }
+  .contact-info li div {
+    width: 100%;
+  }
+
   .footer-main {
     padding-bottom: 80px;
   }
@@ -1408,18 +1632,92 @@ footer {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 920px) {
-  header .nav-container {
-    width: 227px;
+@media (max-width: 650px) {
+  .footer-navigation {
+    max-width: 535px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-navigation .footer-contact-info li {
+    text-align: center;
+  }
+  .footer-navigation .footer-subscribe {
+    margin-top: 40px;
+  }
+  .footer-navigation .footer-subscribe input {
+    width: 80%;
   }
 
-  .home-team-gallery {
-    grid-template: repeat(4, 270px)/repeat(2, 270px);
+  .comment-form input {
+    width: 100%;
   }
-  .home-team-players {
-    grid-column: 1/span 2;
+
+  .blog-related .posts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .home-team-players div {
-    width: 90%;
+}
+@media (max-width: 450px) {
+  .blog-post h2 {
+    margin-top: 40px;
+    font-size: 2.2rem;
+  }
+  .blog-post .breadcrumb {
+    font-size: 0.6rem;
+  }
+
+  .blog-info .attr li {
+    margin-right: 20px;
+  }
+  .blog-info .attr li:first-of-type {
+    margin-left: 0px;
+  }
+
+  .blog-posted-comments .author-info--desktop {
+    display: none;
+  }
+  .blog-posted-comments .author-info--mobile {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .blog-posted-comments .comments-container {
+    padding: 50px 0 25px 0;
+  }
+  .blog-posted-comments .comment {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  .blog-posted-comments .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 20px 0 0 0;
+  }
+  .blog-posted-comments .text-container::before {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    left: 22px;
+    bottom: -12px;
+  }
+
+  .contact h2 {
+    font-size: 2.4rem;
+    width: 100%;
+    max-width: 260px;
+    top: -72px;
+  }
+  .contact h2::before {
+    margin-bottom: 30px;
   }
 }

@@ -63,10 +63,14 @@ header {
         transition: opacity .4s;
     }
 
-    button {
-        font-size: 1.05rem;
+    button,
+    label {
         height: 36px;
         width: 36px;
+    }
+    
+    i {
+        font-size: 1.05rem;
     }
 
     .shopping-bag {
