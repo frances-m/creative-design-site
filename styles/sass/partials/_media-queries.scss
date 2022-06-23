@@ -1,6 +1,6 @@
 @media (max-width: 1625px) {
+    // HOME PAGE
     .home-highlights {
-
         height: 925px;
         background-size: cover;
 
@@ -18,22 +18,21 @@
 }
 
 @media (max-width: 1224px) {
-
+    // HEADER
+    // contact header
     .contact-header .display-img {
         height: 150px;
     }
 
+    // CONTACT PAGE
     .contact h2 {
         top: -85px;
     }
     
+    // HOME PAGE
     .home-team {
         &-gallery {
             grid-template: repeat(3, 270px) / repeat(3, 270px);
-            
-            li {
-                
-            }
         }
 
         &-players {
@@ -56,28 +55,49 @@
             }
         }
     }
-
 }
 
-@media (max-width: 1025px) {
-    
-    @media (max-width: 920px) {
-        header {
-            .nav-container {
-                width: 227px;
+@media (max-width: 995px) {
+    // HOME PAGE
+    .home-highlights {
+        height: 1400px;
+
+        .wrapper {
+            justify-content: center;
+        }
+
+        &-container {
+            width: 100%;
+            max-width: 570px;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+            padding: 90px 0;
         }
     }
+}
     
+@media (max-width: 920px) {
+    // HEADER
+    header {
+        .nav-container {
+            width: 227px;
+        }
+    }
+
+    // blog header
     .blog-header {
         height: 500px;
         background-size: cover;
         background-position: bottom center;
     }
-    
+
+    // contact header
     .contact-header  .display-img {
         background-position: 32% 50%;
     }
-    
+
+    //HOME PAGE
     .home-team {
         &-gallery {
             grid-template: repeat(4, 270px) / repeat(2, 270px);
@@ -91,7 +111,6 @@
             }
         }
     }
-
 }
 
 @media (max-width: 804px) {
@@ -208,6 +227,61 @@
     .comment-form button {
         margin-bottom: 100px;
     }
+
+    // VERTICAL LINES
+    .vertical-line {
+        height: 100px;
+        top: calc((-100px/2));
+    }
+
+    // HOME PAGE
+    .home-branding {
+        .img-container {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 60vw;
+            height: calc(60vw * .5714);
+            margin: 160px 0 80px 0;
+
+            img {
+                width: calc(60vw - 60%);
+                left: calc(60vw - 116%);
+                top: calc(60vw - 202%);
+            }
+        }
+
+        .text-container {
+            flex-wrap: wrap;
+            width: 100%;
+            
+            li {
+                width: 100%;
+
+                &:first-of-type {
+                    margin-bottom: 60px;
+                }
+            }
+
+            p {
+                width: 45%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .home-portfolio {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            height: 380px;
+        }
+
+        .img-container {
+            background-size: cover;
+            background-position: center;
+        }
+    }
     
     // BLOG PAGE
     .blog-info {
@@ -310,40 +384,96 @@
         text-align: center;
         font-size: 1.2rem;
     }
-    }
 }
 
+
 @media (max-width: 650px) {
-    // FOOTER
-    .footer-navigation {
-        max-width: 535px;
-        justify-content: center;
-
-        .footer-contact-info {
-            li {
-                text-align: center;
-            }
-        }
-
-        .footer-subscribe {
-            margin-top: 40px;
-
-            input {
-                width: 80%;
-            }
-        }
+    // HEADER 
+    .home-header {
+        background-size: cover;
+        background-position: bottom center;
+        height: 345px;
     }
-
+    
     // COMMENT FORM 
     .comment-form input {
         width: 100%;
     }
-
+    
+    // HOME PAGE
+    .home-gallery .carousel {
+        align-items: flex-start;
+        
+        button {
+            margin-top: 110px;
+        }
+        
+        &-item {
+            width: 100%;
+            
+            img {
+                margin-bottom: 90px;
+                padding: 0 20px;
+            }
+        }
+    }
+    
     // BLOG PAGE
     .blog-related .posts {
         flex-wrap: wrap;
         justify-content: center;
         
+    }
+
+    // FOOTER
+    .footer-navigation {
+        max-width: 535px;
+        justify-content: center;
+    
+        .footer-contact-info {
+            li {
+                text-align: center;
+            }
+        }
+    
+        .footer-subscribe {
+            margin-top: 40px;
+    
+            input {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    // HOME PAGE
+    .home-team {
+        .wrapper {
+            width: 90%
+        }
+
+        h2 {
+            margin-bottom: 60px;
+        }
+
+        &-gallery {
+            //grid-template: 100vw repeat(7, 80vw) / repeat(1, 80vw);
+            grid-template: 60vw repeat(3, 43vw) / repeat(2, 43vw);
+        }
+        
+        &-players {
+            grid-column: 1 / span 2;
+
+            div {
+                width: 90%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
