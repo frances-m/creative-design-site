@@ -1221,6 +1221,9 @@ footer {
   height: 100%;
   margin-bottom: 30px;
 }
+.blog-posted-comments .author-info--mobile {
+  display: none;
+}
 .blog-posted-comments .img-container {
   margin: 0 33px 0 0;
 }
