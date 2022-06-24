@@ -674,6 +674,7 @@ header .shopping-bag p {
 .comment-form textarea {
   width: 100%;
   margin-top: 10px;
+  resize: vertical;
 }
 .comment-form button {
   font-size: 0.7rem;
@@ -1474,28 +1475,10 @@ footer {
   }
   header h1 {
     height: 36px;
-  }
-  header .right-nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 0px;
-    height: 36px;
-  }
-  header button,
-header label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 0;
-    cursor: pointer;
   }
   header .shopping-bag p {
-    bottom: 6px;
-    right: 8px;
+    right: -1px;
   }
   header .slide-out-nav {
     width: 100vw;
@@ -1507,15 +1490,30 @@ header label {
     background-color: #333;
     z-index: 3;
   }
+  header .slide-out-nav .fa-solid {
+    color: #F6F6F6;
+  }
+  header .slide-out-nav button {
+    padding: 0;
+    width: 26px;
+  }
+  header .slide-out-nav button:first-of-type {
+    margin-right: 10px;
+  }
+  header .slide-out-nav .nav-btn {
+    padding-bottom: 8px;
+    text-align: right;
+  }
   header .slide-out-nav ul {
-    position: relative;
-    top: 180px;
-    left: 50px;
+    position: absolute;
+    top: 90px;
+    left: 5vw;
     opacity: 0;
     color: #F6F6F6;
   }
   header .slide-out-nav li {
     padding: 0 0 25px 0;
+    width: 91vw;
   }
   header .slide-out-nav a {
     font-size: 1.3rem;
@@ -1523,8 +1521,7 @@ header label {
   header .slide-out-nav,
 header h1,
 header button,
-header label,
-header .shopping-bag p {
+header label {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     -webkit-transition-timing-function: linear;
@@ -1542,12 +1539,9 @@ header .shopping-bag p {
             animation: delay-opacity 0.75s ease-in-out;
     opacity: 1;
   }
-  header input[type=checkbox]:checked ~ div label, header input[type=checkbox]:checked ~ div button, header input[type=checkbox]:checked ~ h1 {
+  header input[type=checkbox]:checked ~ label, header input[type=checkbox]:checked ~ h1 {
     z-index: 4;
     color: #F6F6F6;
-  }
-  header input[type=checkbox]:checked ~ div button p {
-    color: #333;
   }
 
   .contact-header .display-img {
@@ -1714,19 +1708,29 @@ header .shopping-bag p {
   }
 
   .home-gallery .carousel {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    position: relative;
   }
-  .home-gallery .carousel button {
-    margin-top: 110px;
+  .home-gallery .carousel .btn {
+    position: absolute;
+    top: 115px;
+  }
+  .home-gallery .carousel .btn--right {
+    right: 0;
   }
   .home-gallery .carousel-item {
-    width: 100%;
+    width: 90vw;
+    font-size: 0.7rem;
   }
   .home-gallery .carousel-item img {
-    margin-bottom: 90px;
-    padding: 0 20px;
+    margin-bottom: 40px;
+    width: 200px;
   }
 
   .blog-related .posts {
@@ -1735,6 +1739,9 @@ header .shopping-bag p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .blog-related .posts li {
+    margin-bottom: 20px;
   }
 
   .footer-navigation {
@@ -1754,6 +1761,19 @@ header .shopping-bag p {
   }
 }
 @media (max-width: 600px) {
+  .blog-header {
+    height: auto;
+    background-image: none;
+  }
+
+  .blog-header-bg--mobile {
+    background-image: url("../assets/blog-1.jpeg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .home-team .wrapper {
     width: 90%;
   }
@@ -1775,6 +1795,32 @@ header .shopping-bag p {
   }
 }
 @media (max-width: 450px) {
+  .home-highlights {
+    height: 1500px;
+  }
+
+  .home-highlights-container {
+    padding: 70px 15px;
+  }
+  .home-highlights-container .text {
+    margin-left: 10px;
+  }
+
+  .home-team-gallery {
+    grid-template: 90vw repeat(6, 70vw)/repeat(1, 70vw);
+    margin-bottom: 90px;
+  }
+  .home-team-gallery li {
+    grid-column: 1/span 1;
+  }
+  .home-team-gallery-players {
+    grid-column: 1/span 1;
+  }
+
+  .home-team-work-with {
+    background-color: #F6F6F6;
+  }
+
   .blog-post h2 {
     margin-top: 40px;
     font-size: 2.2rem;

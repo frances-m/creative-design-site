@@ -129,28 +129,15 @@
         .nav-container {
             width: 140px;
         }
+
         
         h1 {
             height: 36px;
-        }
-        
-        .right-nav {
-            justify-content: space-between;
-            align-items: center;
-            margin-right: 0px;
-            height: 36px;
-        }
-
-        button,
-        label {
-            display: flex;
             padding: 0;
-            cursor: pointer;
         }
         
         .shopping-bag p {
-            bottom: 6px;
-            right: 8px;
+            right: -1px;
         }
         
         .slide-out-nav {
@@ -162,11 +149,29 @@
             position: fixed;
             background-color: $black;
             z-index: 3;
+
+            .fa-solid {
+                color: $secondaryWhite;
+            }
+
+            button {
+                padding: 0;
+                width: 26px;
+
+                &:first-of-type {
+                    margin-right: 10px;
+                }
+            }
+
+            .nav-btn {
+                padding-bottom: 8px;
+                text-align: right;
+            }
             
             ul {
-                position: relative;
-                top: 180px;
-                left: 50px;
+                position: absolute;
+                top: 90px;
+                left: 5vw;
                 opacity: 0;
                 color: $secondaryWhite;
                 
@@ -174,6 +179,7 @@
             
             li {
                 padding: 0 0 25px 0;
+                width: 91vw;
             }
             
             a {
@@ -184,8 +190,7 @@
         .slide-out-nav,
         h1,
         button,
-        label,
-        .shopping-bag p {
+        label {
             transition: .5s;
             transition-timing-function: linear;
         }
@@ -204,17 +209,13 @@
                 opacity: 1;
             }
             
-            &:checked ~ div label,
-            &:checked ~ div button,
+            &:checked ~ label,
             &:checked ~ h1 {
                 z-index: 4;
                 color: $secondaryWhite;
                 
             }
 
-            &:checked ~ div button p {
-                color: $black;
-            }
         }
     }
     
@@ -402,18 +403,27 @@
     
     // HOME PAGE
     .home-gallery .carousel {
+        align-items: center;
+        padding: 40px 0;
         align-items: flex-start;
-        
-        button {
-            margin-top: 110px;
+        position: relative;
+
+        .btn {
+            position: absolute;
+            top: 115px;
+
+            &--right {
+                right: 0;
+            }
         }
         
         &-item {
-            width: 100%;
+            width: 90vw;
+            font-size: .7rem;
             
             img {
-                margin-bottom: 90px;
-                padding: 0 20px;
+                margin-bottom: 40px;
+                width: 200px;
             }
         }
     }
@@ -422,7 +432,9 @@
     .blog-related .posts {
         flex-wrap: wrap;
         justify-content: center;
-        
+        li {
+            margin-bottom: 20px;
+        }
     }
 
     // FOOTER
@@ -447,6 +459,21 @@
 }
 
 @media (max-width: 600px) {
+    // blog header 
+    .blog-header {
+        height: auto;
+        background-image: none;
+    }
+
+    .blog-header-bg--mobile {
+        background-image: url('../assets/blog-1.jpeg');
+        height: 250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
     // HOME PAGE
     .home-team {
         .wrapper {
@@ -458,7 +485,6 @@
         }
 
         &-gallery {
-            //grid-template: 100vw repeat(7, 80vw) / repeat(1, 80vw);
             grid-template: 60vw repeat(3, 43vw) / repeat(2, 43vw);
         }
         
@@ -478,6 +504,49 @@
 }
 
 @media (max-width: 450px) {
+    //HOME PAGE
+    // .home-gallery .carousel {
+
+    //     button {
+    //         margin-top: 250px;
+    //     }
+
+    //     &-item {
+    //         font-size: .6rem;
+    //         img {
+    //             width: 70vw;
+    //         }
+    //     }
+    // }
+
+    .home-highlights {
+        height: 1500px;
+    }
+
+    .home-highlights-container {
+        padding: 70px 15px;
+
+        .text {
+            margin-left: 10px;
+        }
+    }
+    
+
+    .home-team-gallery {
+        grid-template: 90vw repeat(6, 70vw)/repeat(1, 70vw);
+        margin-bottom: 90px;
+        
+        li {
+            grid-column: 1 / span 1;
+        }
+        &-players {
+            grid-column: 1 / span 1;
+        }
+    }
+
+    .home-team-work-with {
+        background-color: $secondaryWhite;
+    }
 
     // BLOG PAGE
     .blog-post {
@@ -507,8 +576,6 @@
         }
 
         .author-info--mobile {
-            //display: flex;
-            //flex-direction: column;
             text-align: left;
             margin-left: 10px;
         }

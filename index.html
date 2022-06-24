@@ -78,6 +78,19 @@
                 <input type="checkbox" id="slide-out-menu">
                 <section class="slide-out-nav">
                     <ul>
+                        <li class="nav-btn">
+                            <button type="button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </li>
+                        
+                        <li class="nav-btn">
+                            <button class="shopping-bag" type="button">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <p>2</p>
+                            </button>
+                        </li>
+                
                         <li>
                             <a class="heading heading--bold" href="#">Home</a>
                         </li>
@@ -99,25 +112,12 @@
                 <!-- Main heading -->
                 <h1 class="heading heading--bold"><a href="#">Creative</a></h1>
                 
-                <!-- Right nav elements -->
-                <div class="right-nav nav-container">
-                    
-                    <button type="button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    
-                    <button class="shopping-bag" type="button">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <p>2</p>
-                    </button>
-                    
-                    <label for="slide-out-menu">
-                        <div>
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                    </label>
-                    
-                </div> <!-- END rightNav -->
+                <!-- Hamburger Menu -->
+                <label for="slide-out-menu">
+                    <div>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </label>
             </nav> 
         </div> <!-- END wrapper -->
     </header>
@@ -153,7 +153,7 @@
 
                 <!-- Gallery Carousel -->
                 <div class="carousel">
-                    <button>
+                    <button class="btn btn--left">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
@@ -167,7 +167,7 @@
                         </li>
                     </ul>
 
-                    <button>
+                    <button class="btn btn--right">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
                 </div> <!-- END carousel-->
