@@ -10,10 +10,6 @@ header {
         justify-content: space-between;
     }
 
-    .nav-bar--mobile {
-        display: none;
-    }
-
     h1 {
         padding: 0 10px;
     }
@@ -90,7 +86,103 @@ header {
             border-radius: 50%;
         }
     }
+}
 
+// Mobile header
+header .nav-bar--mobile {
+    display: none;
+
+    .nav-container {
+        width: 140px;
+    }
+
+    
+    h1 {
+        height: 36px;
+        padding: 0;
+    }
+    
+    .shopping-bag p {
+        right: -1px;
+    }
+    
+    .slide-out-nav {
+        width: 100vw;
+        min-height: 100vh;
+        left: -1000px;
+        top: 0;
+        overflow: visible;
+        position: fixed;
+        background-color: $black;
+        z-index: 3;
+
+        .fa-solid {
+            color: $secondaryWhite;
+        }
+
+        button {
+            padding: 0;
+            width: 26px;
+
+            &:first-of-type {
+                margin-right: 10px;
+            }
+        }
+
+        .nav-btn {
+            padding-bottom: 8px;
+            text-align: right;
+        }
+        
+        ul {
+            position: absolute;
+            top: 90px;
+            left: 5vw;
+            opacity: 0;
+            color: $secondaryWhite;
+            
+        }
+        
+        li {
+            padding: 0 0 25px 0;
+            width: 91vw;
+        }
+        
+        a {
+            font-size: 1.3rem;
+        }
+    }
+    
+    .slide-out-nav,
+    h1,
+    button,
+    label {
+        transition: .5s;
+        transition-timing-function: linear;
+    }
+
+    input[type=checkbox] {
+        opacity: 0 !important;
+        position: absolute !important;
+        
+        
+        &:checked ~ .slide-out-nav {
+            left: 0;
+        }
+        
+        &:checked ~ section ul {
+            animation: delay-opacity .75s ease-in-out;
+            opacity: 1;
+        }
+        
+        &:checked ~ label,
+        &:checked ~ h1 {
+            z-index: 4;
+            color: $secondaryWhite;
+            
+        }
+
+    }
 }
 
 // Unique page styles

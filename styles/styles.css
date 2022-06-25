@@ -502,9 +502,6 @@ header .nav-bar {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .nav-bar--mobile {
-  display: none;
-}
 header h1 {
   padding: 0 10px;
 }
@@ -581,6 +578,83 @@ header .shopping-bag p {
   width: 16px;
   background-color: #C3DAB7;
   border-radius: 50%;
+}
+
+header .nav-bar--mobile {
+  display: none;
+}
+header .nav-bar--mobile .nav-container {
+  width: 140px;
+}
+header .nav-bar--mobile h1 {
+  height: 36px;
+  padding: 0;
+}
+header .nav-bar--mobile .shopping-bag p {
+  right: -1px;
+}
+header .nav-bar--mobile .slide-out-nav {
+  width: 100vw;
+  min-height: 100vh;
+  left: -1000px;
+  top: 0;
+  overflow: visible;
+  position: fixed;
+  background-color: #333;
+  z-index: 3;
+}
+header .nav-bar--mobile .slide-out-nav .fa-solid {
+  color: #F6F6F6;
+}
+header .nav-bar--mobile .slide-out-nav button {
+  padding: 0;
+  width: 26px;
+}
+header .nav-bar--mobile .slide-out-nav button:first-of-type {
+  margin-right: 10px;
+}
+header .nav-bar--mobile .slide-out-nav .nav-btn {
+  padding-bottom: 8px;
+  text-align: right;
+}
+header .nav-bar--mobile .slide-out-nav ul {
+  position: absolute;
+  top: 90px;
+  left: 5vw;
+  opacity: 0;
+  color: #F6F6F6;
+}
+header .nav-bar--mobile .slide-out-nav li {
+  padding: 0 0 25px 0;
+  width: 91vw;
+}
+header .nav-bar--mobile .slide-out-nav a {
+  font-size: 1.3rem;
+}
+header .nav-bar--mobile .slide-out-nav,
+header .nav-bar--mobile h1,
+header .nav-bar--mobile button,
+header .nav-bar--mobile label {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+header .nav-bar--mobile input[type=checkbox] {
+  opacity: 0 !important;
+  position: absolute !important;
+}
+header .nav-bar--mobile input[type=checkbox]:checked ~ .slide-out-nav {
+  left: 0;
+}
+header .nav-bar--mobile input[type=checkbox]:checked ~ section ul {
+  -webkit-animation: delay-opacity 0.75s ease-in-out;
+          animation: delay-opacity 0.75s ease-in-out;
+  opacity: 1;
+}
+header .nav-bar--mobile input[type=checkbox]:checked ~ label, header .nav-bar--mobile input[type=checkbox]:checked ~ h1 {
+  z-index: 4;
+  color: #F6F6F6;
 }
 
 .home-header {
@@ -1046,7 +1120,7 @@ footer {
 .home-portfolio .text-container p {
   max-width: 490px;
   width: 85%;
-  opacity: 0.6;
+  opacity: 0.75;
   margin-bottom: 50px;
 }
 .home-portfolio .text-container button {
@@ -1270,7 +1344,7 @@ footer {
   letter-spacing: 0.3px;
 }
 .blog-posted-comments .reply-btn:hover {
-  font-weight: 600;
+  font-weight: 500;
 }
 .blog-posted-comments .comment-text {
   opacity: 0.7;
@@ -1438,6 +1512,43 @@ footer {
     margin: 40px 0;
     padding: 90px 0;
   }
+
+  .footer-main {
+    padding-bottom: 80px;
+  }
+
+  .footer-navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 655px;
+    margin: 0 auto;
+  }
+  .footer-navigation .container {
+    margin-bottom: 80px;
+  }
+  .footer-navigation .footer-subscribe {
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .footer-navigation .footer-subscribe h4 {
+    margin-bottom: 5px;
+  }
+  .footer-navigation .footer-subscribe p {
+    margin-bottom: 20px;
+  }
+  .footer-navigation .footer-subscribe input {
+    width: 90%;
+  }
+
+  .footer-social {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 920px) {
   header .nav-container {
@@ -1472,79 +1583,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  header .nav-container {
-    width: 140px;
-  }
-  header h1 {
-    height: 36px;
-    padding: 0;
-  }
-  header .shopping-bag p {
-    right: -1px;
-  }
-  header .slide-out-nav {
-    width: 100vw;
-    min-height: 100vh;
-    left: -1000px;
-    top: 0;
-    overflow: visible;
-    position: fixed;
-    background-color: #333;
-    z-index: 3;
-  }
-  header .slide-out-nav .fa-solid {
-    color: #F6F6F6;
-  }
-  header .slide-out-nav button {
-    padding: 0;
-    width: 26px;
-  }
-  header .slide-out-nav button:first-of-type {
-    margin-right: 10px;
-  }
-  header .slide-out-nav .nav-btn {
-    padding-bottom: 8px;
-    text-align: right;
-  }
-  header .slide-out-nav ul {
-    position: absolute;
-    top: 90px;
-    left: 5vw;
-    opacity: 0;
-    color: #F6F6F6;
-  }
-  header .slide-out-nav li {
-    padding: 0 0 25px 0;
-    width: 91vw;
-  }
-  header .slide-out-nav a {
-    font-size: 1.3rem;
-  }
-  header .slide-out-nav,
-header h1,
-header button,
-header label {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    -webkit-transition-timing-function: linear;
-            transition-timing-function: linear;
-  }
-  header input[type=checkbox] {
-    opacity: 0 !important;
-    position: absolute !important;
-  }
-  header input[type=checkbox]:checked ~ .slide-out-nav {
-    left: 0;
-  }
-  header input[type=checkbox]:checked ~ section ul {
-    -webkit-animation: delay-opacity 0.75s ease-in-out;
-            animation: delay-opacity 0.75s ease-in-out;
-    opacity: 1;
-  }
-  header input[type=checkbox]:checked ~ label, header input[type=checkbox]:checked ~ h1 {
-    z-index: 4;
-    color: #F6F6F6;
   }
 
   .contact-header .display-img {
@@ -1660,43 +1698,6 @@ header label {
   }
   .contact-info li div {
     width: 100%;
-  }
-
-  .footer-main {
-    padding-bottom: 80px;
-  }
-
-  .footer-navigation {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    max-width: 655px;
-    margin: 0 auto;
-  }
-  .footer-navigation .container {
-    margin-bottom: 80px;
-  }
-  .footer-navigation .footer-subscribe {
-    width: 100%;
-    margin-bottom: 0px;
-    text-align: left;
-  }
-  .footer-navigation .footer-subscribe h4 {
-    margin-bottom: 5px;
-  }
-  .footer-navigation .footer-subscribe p {
-    margin-bottom: 20px;
-  }
-  .footer-navigation .footer-subscribe input {
-    width: 90%;
-  }
-
-  .footer-social {
-    text-align: center;
-    font-size: 1.2rem;
   }
 }
 @media (max-width: 650px) {
