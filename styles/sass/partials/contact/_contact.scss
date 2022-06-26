@@ -17,7 +17,7 @@
         }
     }
 
-    .help-message {
+    &__help-message {
         text-align: left;
         opacity: .5;
         font-weight: 500;
@@ -25,12 +25,12 @@
         margin-bottom: 45px;
     }
 
-    &-details {
+    &__details {
         padding-top: 150px;
         margin-left: 3px;
     }
 
-    &-info {
+    &__info {
         display: flex;
         width: 100%;
         margin-bottom: 55px;
@@ -69,7 +69,7 @@
         }
     }
 
-    &-form {
+    &__form {
         h3 {
             padding-bottom: 20px;
         }
@@ -79,7 +79,7 @@
         }
     }
 
-    &-display-img {
+    &__display-img {
         background-image: url('../assets/contact-2.jpeg');
         @include fullbleed-height(688);
     }

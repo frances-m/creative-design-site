@@ -277,25 +277,23 @@
     }
     
     // CONTACT PAGE
-    .contact {
-        &-info {
-            flex-direction: column;
-            align-items: center;
+    .contact__info {
+        flex-direction: column;
+        align-items: center;
+        
+        li {
+            border-right: none;
+            border-bottom: $borderStyle;
+            text-align: center;
+            width: 100%;
+            max-width: 236px;
             
-            li {
-                border-right: none;
-                border-bottom: $borderStyle;
-                text-align: center;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            
+            div {
                 width: 100%;
-                max-width: 236px;
-                
-                &:last-of-type {
-                    border-bottom: none;
-                }
-                
-                div {
-                    width: 100%;
-                }
             }
         }
     }
