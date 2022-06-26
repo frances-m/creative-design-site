@@ -45,6 +45,10 @@
             p {
                 margin-bottom: 40px;
             }
+
+            form {
+                height: 48px;
+            }
     
             input {
                 position: relative;
@@ -52,23 +56,20 @@
                 left: 4px;
 
                 width: 220px;
-    
+                height: 100%;
+
                 &:focus-visible {
-                    outline: none;
-    
+                    outline: $focusOutline;
+                    
                     &::placeholder {
                         opacity: 1;
                     }
-                }
-                
-                &:focus {
-                    outline: auto;
                 }
             }
     
             button {
                 width: 48px;
-                height: 48px;
+                height: 100%;
                 margin: 0;
                 padding: 0;
 

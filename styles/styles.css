@@ -333,6 +333,14 @@ img {
   max-width: 100%;
 }
 
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:focus-visible {
+  outline: #a3d489 solid 4px;
+}
+
 button {
   height: 55px;
   border: none;
@@ -516,6 +524,10 @@ address {
 .header h1 {
   padding: 0 10px;
 }
+.header h1 a:focus-visible {
+  background: rgba(195, 218, 183, 0.75);
+  outline: none;
+}
 .header__nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,10 +552,10 @@ address {
   z-index: 2;
   padding: 0 8px;
 }
-.header__link-container a:focus ~ .hover-style {
+.header__link-container a:focus-visible ~ .hover-style {
   opacity: 1;
 }
-.header__link-container a:focus {
+.header__link-container a:focus-visible {
   outline: none;
 }
 .header__link-container:hover > .hover-style {
@@ -563,6 +575,10 @@ address {
 .header__btn {
   width: 36px;
   height: 36px;
+}
+.header__btn:focus-visible {
+  outline: none;
+  background: rgba(195, 218, 183, 0.75);
 }
 .header__btn i {
   font-size: 1.05rem;
@@ -596,6 +612,9 @@ address {
 .header__nav-bar--mobile h1 {
   height: 36px;
   padding: 0;
+}
+.header__nav-bar--mobile label {
+  cursor: pointer;
 }
 
 .slide-nav {
@@ -656,6 +675,9 @@ address {
 .slide-nav__toggle-btn:checked ~ label, .slide-nav__toggle-btn:checked ~ h1 {
   z-index: 4;
   color: #F6F6F6;
+}
+.slide-nav__toggle-btn:focus-visible ~ label {
+  outline: #a3d489 solid 4px;
 }
 
 .header .transition {
@@ -764,8 +786,12 @@ address {
   font-weight: normal;
   letter-spacing: 0.2px;
 }
-.comment-form button:hover {
+.comment-form button:hover, .comment-form button:focus {
+  outline: none;
   font-weight: 500;
+}
+.comment-form button:focus-visible {
+  background: rgba(195, 218, 183, 0.75);
 }
 
 .footer {
@@ -812,14 +838,18 @@ address {
 .footer__nav-container--subscribe p {
   margin-bottom: 40px;
 }
+.footer__nav-container--subscribe form {
+  height: 48px;
+}
 .footer__nav-container--subscribe input {
   position: relative;
   top: -0.5px;
   left: 4px;
   width: 220px;
+  height: 100%;
 }
 .footer__nav-container--subscribe input:focus-visible {
-  outline: none;
+  outline: #a3d489 solid 4px;
 }
 .footer__nav-container--subscribe input:focus-visible::-webkit-input-placeholder {
   opacity: 1;
@@ -836,12 +866,9 @@ address {
 .footer__nav-container--subscribe input:focus-visible::placeholder {
   opacity: 1;
 }
-.footer__nav-container--subscribe input:focus {
-  outline: auto;
-}
 .footer__nav-container--subscribe button {
   width: 48px;
-  height: 48px;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #C3DAB7;
@@ -930,6 +957,9 @@ address {
 }
 .home-carousel__btn:hover {
   opacity: 0.5;
+}
+.home-carousel__btn:focus-visible {
+  outline: #a3d489 solid 4px;
 }
 .home-carousel__item {
   width: 68%;
@@ -1130,7 +1160,8 @@ address {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.home-portfolio__text-container button:hover {
+.home-portfolio__text-container button:hover, .home-portfolio__text-container button:focus-visible {
+  outline: none;
   color: #F6F6F6;
   background-color: #333;
 }
@@ -1268,6 +1299,13 @@ address {
 .blog-related__posts img:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+.blog-related__posts a:focus-visible {
+  outline: none;
+}
+.blog-related__posts a:focus-visible img {
+  outline: #a3d489 solid 4px;
+  outline-width: 6px;
 }
 .blog-related__posts p {
   margin-top: 10px;
@@ -1418,7 +1456,14 @@ address {
 }
 .contact__info address {
   font-size: 0.65rem;
+}
+.contact__info address a {
   opacity: 0.8;
+}
+.contact__info address a:focus {
+  outline: none;
+  opacity: 1;
+  background: rgba(195, 218, 183, 0.75);
 }
 .contact__form h3 {
   padding-bottom: 20px;

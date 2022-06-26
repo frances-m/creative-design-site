@@ -56,8 +56,14 @@
         font-weight: normal;
         letter-spacing: .2px;
 
-        &:hover {
+        &:hover,
+        &:focus {
+            outline: none;
             font-weight:500;
+        }
+
+        &:focus-visible {
+            background: $focusBackground;
         }
     }
 }

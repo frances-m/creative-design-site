@@ -68,7 +68,17 @@
 
         address {
             font-size: .65rem;
-            opacity: .8;
+            
+            a {
+                opacity: .8;
+            }
+
+            a:focus {
+                outline: none;
+
+                opacity: 1;
+                background: $focusBackground;
+            }
         }
     }
 

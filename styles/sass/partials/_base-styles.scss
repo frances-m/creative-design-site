@@ -30,6 +30,14 @@ img {
     max-width: 100%;
 }
 
+a {
+    transition: .3s;
+
+    &:focus-visible {
+        outline: $focusOutline;
+    }
+}
+
 button {
     height: 55px;
 
@@ -64,7 +72,6 @@ textarea {
 
 .social-icons {
     display: flex;
-    
     font-size: .8rem;
 }
 

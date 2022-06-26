@@ -15,6 +15,15 @@
             transform: scale(1.02);
         }
 
+        a:focus-visible {
+            outline: none;
+
+            img {
+                outline: $focusOutline;
+                outline-width: 6px;
+            }
+        }
+
         p {
             margin-top: 10px;
             

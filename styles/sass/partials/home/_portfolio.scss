@@ -34,7 +34,10 @@
             
             transition: .3s;
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
+                outline: none;
+                
                 color: $secondaryWhite;
                 background-color: $black;
             }
