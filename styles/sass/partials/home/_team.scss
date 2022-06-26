@@ -16,14 +16,14 @@
         font-size: 1.15rem;
     }
 
-    &-gallery {
+    &__gallery {
         display: grid;
         grid-template: repeat(2, 270px) / repeat(4, 270px);
         gap: 30px;
         margin-bottom: 190px;
     }
 
-    &-players {
+    &__players {
         background-color: $secondaryWhite;
         grid-column: 1 / span 2;
 
@@ -43,7 +43,7 @@
         
     }
 
-    &-work-with {
+    &__work-with {
         transition: .5s;
 
         &:hover {

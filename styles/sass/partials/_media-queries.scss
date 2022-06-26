@@ -4,14 +4,14 @@
         height: 925px;
         background-size: cover;
 
-        &-container {
+        &__container {
             background-color: rgba($primaryWhite, .96);
             padding: 50px;
             width: 925px;
             gap: 60px;
         }
 
-        .highlight {
+        &__highlight {
             margin-bottom: 0;
         }
     }
@@ -24,18 +24,14 @@
         height: 150px;
     }
 
-    // CONTACT PAGE
-    .contact h2 {
-        top: -85px;
-    }
     
     // HOME PAGE
     .home-team {
-        &-gallery {
+        &__gallery {
             grid-template: repeat(3, 270px) / repeat(3, 270px);
         }
-
-        &-players {
+        
+        &__players {
             grid-column: 1 / span 3;
             
             div {
@@ -49,11 +45,16 @@
                 margin: 0 auto;
                 text-align: center;
             }
-
+            
             h3 {
                 padding-top: 0px;
             }
         }
+    }
+
+    // CONTACT PAGE
+    .contact h2 {
+        top: -85px;
     }
 }
 
@@ -66,7 +67,7 @@
             justify-content: center;
         }
 
-        &-container {
+        &__container {
             width: 100%;
             max-width: 570px;
             justify-content: center;
@@ -138,11 +139,11 @@
 
     //HOME PAGE
     .home-team {
-        &-gallery {
+        &__gallery {
             grid-template: repeat(4, 270px) / repeat(2, 270px);
         }
         
-        &-players {
+        &__players {
             grid-column: 1 / span 2;
 
             div {
@@ -185,7 +186,7 @@
 
     // HOME PAGE
     .home-branding {
-        .img-container {
+        &__img-container {
             background-size: contain;
             background-repeat: no-repeat;
             width: 60vw;
@@ -199,7 +200,7 @@
             }
         }
 
-        .text-container {
+        &__text-container {
             flex-wrap: wrap;
             width: 100%;
             
@@ -226,7 +227,7 @@
             height: 380px;
         }
 
-        .img-container {
+        &__img-container {
             background-size: cover;
             background-position: center;
         }
@@ -309,13 +310,16 @@
     }
     
     // HOME PAGE
-    .home-gallery .carousel {
+    .home-carousel {
+
+        &__container {
         align-items: center;
         padding: 40px 0;
         align-items: flex-start;
         position: relative;
+        }
 
-        .btn {
+        &__btn {
             position: absolute;
             top: 115px;
 
@@ -324,7 +328,7 @@
             }
         }
         
-        &-item {
+        &__item {
             width: 90vw;
             font-size: .7rem;
             
@@ -393,11 +397,11 @@
             margin-bottom: 60px;
         }
 
-        &-gallery {
+        &__gallery {
             grid-template: 60vw repeat(3, 43vw) / repeat(2, 43vw);
         }
         
-        &-players {
+        &__players {
             grid-column: 1 / span 2;
 
             div {
@@ -417,31 +421,36 @@
     // HOME PAGE
     .home-highlights {
         height: 1500px;
-    }
 
-    .home-highlights-container {
-        padding: 70px 15px;
+        &__container {
+            padding: 70px 15px;
+        }
 
-        .text {
+        &__text {
             margin-left: 10px;
         }
     }
+
     
-    .home-team-gallery {
-        grid-template: 90vw repeat(6, 70vw)/repeat(1, 70vw);
-        margin-bottom: 90px;
+    .home-team {
+        &__gallery {
+            grid-template: 90vw repeat(6, 70vw)/repeat(1, 70vw);
+            margin-bottom: 90px;
         
-        li {
+            li {
+                grid-column: 1 / span 1;
+            }
+        }
+
+        &__players {
             grid-column: 1 / span 1;
         }
-        &-players {
-            grid-column: 1 / span 1;
+
+        &__work-with {
+            background-color: $secondaryWhite;
         }
     }
 
-    .home-team-work-with {
-        background-color: $secondaryWhite;
-    }
 
     // BLOG PAGE
     .blog-post {

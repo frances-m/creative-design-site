@@ -6,7 +6,7 @@
         height: calc((925 / 960) * 50vw);
     }
 
-    .text-container {
+    &__text-container {
         background-color: $lightSage;
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@
         }
     }
 
-    .img-container {
+    &__img-container {
         background-image: url('../assets/home-10.jpeg');
         background-size: contain;
     }
