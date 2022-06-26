@@ -95,13 +95,12 @@
     }
     
     &__share {
-        display: flex;
         justify-content: space-between;
         align-items: center;
         width: 175px;
-    
-        a {
-            font-size: .8rem;
+
+        p.heading {
+            font-size: .9rem;
         }
     }
 }

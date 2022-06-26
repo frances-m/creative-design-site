@@ -55,6 +55,11 @@ textarea {
     background-color: rgba(55, 55, 55, .4);
 }
 
+.social-icons {
+    font-size: .8rem;
+    display: flex;
+}
+
 
 // I noticed the full-bleed images looked had weird spacing issues underneath them in Chrome, and some searching brought me to this Stack Overflow answer by Nisharg Shah, which I've edited a bit. 
 // https://stackoverflow.com/questions/55918304/css-for-default-scrollbar-of-chrome

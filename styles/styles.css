@@ -359,6 +359,13 @@ textarea {
   background-color: rgba(55, 55, 55, 0.4);
 }
 
+.social-icons {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -426,6 +433,10 @@ a {
 
 ul {
   text-align: left;
+}
+
+address {
+  font-style: normal;
 }
 
 .blog-page h2,
@@ -838,9 +849,8 @@ ul {
 }
 .footer__social {
   text-align: left;
-  font-size: 0.8rem;
 }
-.footer__social a {
+.footer__social li {
   margin-right: 15px;
 }
 .footer__logo {
@@ -1226,9 +1236,6 @@ ul {
   letter-spacing: 0.2px;
 }
 .blog-post__share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1237,8 +1244,8 @@ ul {
           align-items: center;
   width: 175px;
 }
-.blog-post__share a {
-  font-size: 0.8rem;
+.blog-post__share p.heading {
+  font-size: 0.9rem;
 }
 
 .blog-related {
@@ -1409,7 +1416,7 @@ ul {
 .contact__info h4 {
   margin-bottom: 10px;
 }
-.contact__info p {
+.contact__info address {
   opacity: 0.8;
   font-size: 0.65rem;
 }
@@ -1532,6 +1539,9 @@ ul {
     width: 90%;
   }
   .footer__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     font-size: 1.2rem;
   }
@@ -1819,13 +1829,25 @@ ul {
 }
 @media (max-width: 450px) {
   .home-highlights {
-    height: 1500px;
+    height: 1800px;
+  }
+  .home-highlights__highlight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
   .home-highlights__container {
     padding: 70px 15px;
   }
   .home-highlights__text {
-    margin-left: 10px;
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
   }
 
   .home-team__gallery {
