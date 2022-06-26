@@ -19,117 +19,117 @@
     <!-- Skip Link -->
 	<a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="blog-header">
+    <header class="header header--blog">
         <div class="wrapper">
-        
+            
             <!-- Main nav bar -->
-            <nav class="nav-bar nav-bar--desktop">
-
+            <nav class="header__nav-bar header__nav-bar--desktop">
+                
                 <!-- Left nav elements-->
-                <div class="left-nav nav-container">
+                <div class="header__nav-container header__nav--container--left">
                     
-                    <div class="link-container">
+                    <div class="header__link-container">
                         <a class="heading heading--nav" href="./index.html">Home</a>
                         <div class="hover-style"></div>
                     </div>
-
-                    <div class="link-container">
+                    
+                    <div class="header__link-container">
                         <a class="heading heading--nav" href="#">Blog</a>
                         <div class="hover-style"></div>
                     </div>
-
-                    <div class="link-container">
+                    
+                    <div class="header__link-container">
                         <a class="heading heading--nav" href="#">Portfolio</a>
                         <div class="hover-style"></div>
                     </div>
                 </div> <!-- END leftNav-->
-
+                
                 <!-- Main heading -->
                 <h1 class="heading heading--bold"><a href="./index.html">Creative</a></h1>
-
+                
                 <!-- Right nav elements -->
-                <div class="right-nav nav-container">
-
-                    <div class="link-container">
+                <div class="header__nav-container header__nav-container--right">
+                    
+                    <div class="header__link-container">
                         <a class="heading heading--nav" href="#">Shop</a>
                         <div class="hover-style"></div>
                     </div>
-
-                    <div class="link-container">
+                    
+                    <div class="header__link-container">
                         <a class="heading heading--nav" href="./contact.html">Contact</a>
                         <div class="hover-style"></div>
                     </div>
-
-                    <button type="button">
+                    
+                    <button class="header__btn" type="button" aria-label="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-
-                    <button class="shopping-bag" type="button">
+                    
+                    <button class="header__btn header__btn--shopping-bag" class="shopping-bag" type="button" aria-label="shopping cart">
                         <i class="fa-solid fa-bag-shopping"></i>
                         <p>2</p>
                     </button>
-
+                    
                 </div> <!-- END rightNav -->
             </nav> 
             
             <!-- Mobile nav bar -->
-            <nav class="nav-bar nav-bar--mobile">
+            <nav class="header__nav-bar header__nav-bar--mobile">
                 
                 <!-- Slide out nav -->
-                <input type="checkbox" id="slide-out-menu">
-                <section class="slide-out-nav">
-                    <ul>
-                        <li class="nav-btn">
-                            <button type="button">
+                <input class="slide-nav__toggle-btn" type="checkbox" id="slide-out-menu">
+                <section class="slide-nav transition">
+                    <ul class="slide-nav__links">
+                        <li class="slide-nav__btn-container">
+                            <button class="slide-nav__btn header__btn transition" type="button" aria-label="search">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </li>
                         
-                        <li class="nav-btn">
-                            <button class="shopping-bag" type="button">
+                        <li class="slide-nav__btn-container">
+                            <button class="slide-nav__btn slide-nav__btn--shopping-bag header__btn header__btn--shopping-bag transition" type="button" aria-label="shopping cart">
                                 <i class="fa-solid fa-bag-shopping"></i>
                                 <p>2</p>
                             </button>
                         </li>
-                        <li>
+                        <li class="slide-nav__link-container">
                             <a class="heading heading--bold" href="./index.html">Home</a>
                         </li>
-                        <li>
+                        <li class="slide-nav__link-container">
                             <a class="heading heading--bold" href="#">Blog</a>
                         </li>
-                        <li>
+                        <li class="slide-nav__link-container">
                             <a class="heading heading--bold" href="#">Portfolio</a>
                         </li>
-                        <li>
+                        <li class="slide-nav__link-container">
                             <a class="heading heading--bold" href="#">Shop</a>
                         </li>
-                        <li>
+                        <li class="slide-nav__link-container">
                             <a class="heading heading--bold" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </section>
-
+                
                 <!-- Main heading -->
-                <h1 class="heading heading--bold"><a href="#">Creative</a></h1>
+                <h1 class="heading heading--bold transition"><a href="#">Creative</a></h1>
                 
                 <!-- Hamburger Menu -->
-                <label for="slide-out-menu">
+                <label class="header__btn transition" for="slide-out-menu">
                     <div>
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </label>
             </nav> 
         </div> <!-- END wrapper -->
+        <div class="mobile-bg"></div>
     </header>
-
+    
     <main class="blog-page" id="main-content">
-        <div class="blog-header-bg--mobile"></div>
         <div class="wrapper">
-
+            
             <!-- Blog Post Section -->
             <section class="blog-post">
                 <h2 class="heading heading--bold">How To Run a Creative Agency</h2>
-
+                
                 <!-- breadcrumb nav -->
                 <nav class="breadcrumb">
                     <ul>
@@ -138,7 +138,7 @@
                         <li class="current-page">How to Run a Creative Agency</li>
                     </ul>
                 </nav>
-
+                
                 <!-- blog info -->
                 <div class="blog-info">
                     <ul class="author">
@@ -151,7 +151,7 @@
                             <p>Administrator</p>
                         </li>
                     </ul>
-
+                    
                     <ul class="attr">
                         <li class="info-container">
                             <h4 class="heading">Date</h4>

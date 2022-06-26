@@ -20,7 +20,7 @@
 @media (max-width: 1224px) {
     // HEADER
     // contact header
-    .contact-header .display-img {
+    .header--contact .display-img {
         height: 150px;
     }
 
@@ -76,65 +76,63 @@
         }
     }
 
-        // FOOTER 
-        .footer-main {
-            padding-bottom: 80px;
+    // FOOTER 
+    .footer-main {
+        padding-bottom: 80px;
+    }
+    
+    .footer-navigation {
+        justify-content: space-between;
+        align-items:flex-start;
+        max-width: 655px;
+        margin: 0 auto;
+    
+        .container {
+            margin-bottom: 80px;
         }
-        
-        .footer-navigation {
-            justify-content: space-between;
-            align-items:flex-start;
-            max-width: 655px;
-            margin: 0 auto;
-        
-            .container {
-                margin-bottom: 80px;
+    
+        .footer-subscribe {
+            width: 100%;
+            margin-bottom: 0px;
+            text-align: left;
+            
+    
+            h4 {
+                margin-bottom: 5px;
             }
-        
-            .footer-subscribe {
-                width: 100%;
-                margin-bottom: 0px;
-                text-align: left;
-                
-        
-                h4 {
-                    margin-bottom: 5px;
-                }
-        
-                p {
-                    margin-bottom: 20px;
-                }
-        
-                input {
-                    width: 90%;
-                }
+    
+            p {
+                margin-bottom: 20px;
             }
-        
+    
+            input {
+                width: 90%;
+            }
         }
-        
-        .footer-social {
-            text-align: center;
-            font-size: 1.2rem;
-        }
+    
+    }
+    
+    .footer-social {
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
     
 @media (max-width: 920px) {
     // HEADER
-    header {
-        .nav-container {
-            width: 227px;
-        }
+    .header__nav-container {
+        width: 227px;
     }
 
     // blog header
-    .blog-header {
+    .header--blog {
         height: 500px;
         background-size: cover;
         background-position: bottom center;
     }
 
     // contact header
-    .contact-header  .display-img {
+    .header--contact  .display-img {
         background-position: 32% 50%;
     }
 
@@ -158,20 +156,19 @@
 
     // HEADER 
     // mobile nav
-    header {
-        .nav-bar--desktop {
+    .header__nav-bar {
+
+        &--desktop {
             display: none;
         }
         
-        .nav-bar--mobile {
+        &--mobile {
             display: flex;
         }
-        
-
     }
     
     // contact header
-    .contact-header .display-img {
+    .header--contact .display-img {
         background-position: 20% 50%;
     }
 
@@ -300,7 +297,7 @@
 
 @media (max-width: 650px) {
     // HEADER 
-    .home-header {
+    .header--home {
         background-size: cover;
         background-position: bottom center;
         height: 345px;
@@ -369,20 +366,22 @@
 }
 
 @media (max-width: 600px) {
+    // HEADER 
     // blog header 
-    .blog-header {
+    .header--blog {
         height: auto;
         background-image: none;
+
+        .mobile-bg{
+            background-image: url('../assets/blog-1.jpeg');
+            height: 250px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
     }
 
-    .blog-header-bg--mobile {
-        background-image: url('../assets/blog-1.jpeg');
-        height: 250px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        
-    }
 
     // HOME PAGE
     .home-team {
@@ -414,21 +413,8 @@
 }
 
 @media (max-width: 450px) {
-    //HOME PAGE
-    // .home-gallery .carousel {
 
-    //     button {
-    //         margin-top: 250px;
-    //     }
-
-    //     &-item {
-    //         font-size: .6rem;
-    //         img {
-    //             width: 70vw;
-    //         }
-    //     }
-    // }
-
+    // HOME PAGE
     .home-highlights {
         height: 1500px;
     }
@@ -441,7 +427,6 @@
         }
     }
     
-
     .home-team-gallery {
         grid-template: 90vw repeat(6, 70vw)/repeat(1, 70vw);
         margin-bottom: 90px;
