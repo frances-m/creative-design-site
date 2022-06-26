@@ -4,25 +4,24 @@
     
     
     .wrapper {
-        height: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        height: 100%;
     }
 
     &__container {
-        width: 770px;
         display: flex;
         flex-direction: column;
         flex-flow: wrap;
-        padding-top: 140px;
         justify-content: space-between;
-        
+        width: 770px;
+        padding-top: 140px;
     }
 
     &__highlight {
-        width: calc(735px/2);
         display: flex;
+        width: calc(735px/2);
         margin-bottom: 105px;
     }
 
@@ -31,8 +30,8 @@
 
         i {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             width: 67px;
             height: 67px;
             margin-top: 5px;
@@ -46,13 +45,13 @@
         margin-left: 38px;
 
         h3 {
-            letter-spacing: .4px;
             margin-bottom: 10px;
+            letter-spacing: .4px;
         }
 
         p {
-            opacity: .6;
             font-size: .65rem;
+            opacity: .6;
         }
     }
 }

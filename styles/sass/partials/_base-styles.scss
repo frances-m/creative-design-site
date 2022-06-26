@@ -1,8 +1,9 @@
 .skip-link {
     position: absolute;
+    z-index: 10;
     left: -1000px;
     top: 5px;
-    z-index: 999;
+
     background: white;
     color: #000;
     
@@ -30,10 +31,13 @@ img {
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
     height: 55px;
+
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
 }
 
 input {
@@ -42,22 +46,26 @@ input {
 
 input,
 textarea {
-    border: none;
     font-family: $bodyFont;
+
     padding-left: 15px;
+    border: none;
 }
 
 .vertical-line {
-    width: 1px;
-    height: 160px;
     position: absolute;
     top: calc((-160px/2));
+
+    width: 1px;
+    height: 160px;
+
     background-color: rgba(55, 55, 55, .4);
 }
 
 .social-icons {
-    font-size: .8rem;
     display: flex;
+    
+    font-size: .8rem;
 }
 
 

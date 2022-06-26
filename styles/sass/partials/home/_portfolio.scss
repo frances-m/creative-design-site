@@ -7,27 +7,31 @@
     }
 
     &__text-container {
-        background-color: $lightSage;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+
+        background-color: $lightSage;
 
         h2 {
-            font-size: 1.2rem;
             margin-bottom: 50px;
+            font-size: 1.2rem;
         }
 
         p {
-            max-width: 490px;
             width: 85%;
-            opacity: .75;
+            max-width: 490px;
             margin-bottom: 50px;
+
+            opacity: .75;
         }
 
         button {
-            background-color: $primaryWhite;
             padding: 0 30px;
+            
+            background-color: $primaryWhite;
+            
             transition: .3s;
 
             &:hover {

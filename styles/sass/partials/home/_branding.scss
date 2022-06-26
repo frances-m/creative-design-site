@@ -3,16 +3,19 @@
 
     .wrapper {
         position: relative;
+
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     &__img-container {
+        position: relative;
+
         width: 469px;
         height: 268px;
-        position: relative;
         margin: 195px 0 80px 0;
+
         background-image: url('../assets/home-2.jpeg');
 
         img {
@@ -23,12 +26,13 @@
     }
 
     &__text-container {
-        text-align: center;
         display: flex;
         justify-content: space-between;
         width: 746px;
         margin-bottom: 135px;
-
+        
+        text-align: center;
+        
         li {
             width: 334px;
         }

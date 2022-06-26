@@ -2,10 +2,10 @@
     padding-bottom: 105px;
 
     &__posts {
-        margin-top: 55px;
         display: flex;
         justify-content: space-between;
         gap: 15px;
+        margin-top: 55px;
 
         img {
             transition: .3s;
@@ -17,6 +17,7 @@
 
         p {
             margin-top: 10px;
+            
             font-size: .68rem;
             letter-spacing: 1px;
         }

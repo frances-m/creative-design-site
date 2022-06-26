@@ -7,15 +7,16 @@
     input,
     textarea {
         border-bottom: $borderStyle;
-        letter-spacing: .4px;
-        padding-left: 4px;
         margin-left: 3px;
+        padding-left: 4px;
+
+        letter-spacing: .4px;
         
 
         &:focus,
         &:focus-visible {
-            outline: none;
             border-color: $black;
+            outline: none;
 
             &::placeholder {
                 opacity: 1;
@@ -28,8 +29,9 @@
     }
 
     label {
-        letter-spacing: .4px;
         opacity: .6;
+
+        letter-spacing: .4px;
     }
 
     input {
@@ -41,16 +43,18 @@
     textarea {
         width: 100%;
         margin-top: 10px;
+
         resize: vertical;
     }
 
     button {
-        font-size: .7rem;
-        letter-spacing: .2px;
-        border-bottom: 1px solid $black;
         height: 35px;
         margin: 50px 0 190px 0;
+        border-bottom: 1px solid $black;
+        
+        font-size: .7rem;
         font-weight: normal;
+        letter-spacing: .2px;
 
         &:hover {
             font-weight:500;

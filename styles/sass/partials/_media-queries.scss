@@ -2,13 +2,15 @@
     // HOME PAGE
     .home-highlights {
         height: 925px;
+
         background-size: cover;
 
         &__container {
-            background-color: rgba($primaryWhite, .96);
-            padding: 50px;
-            width: 925px;
             gap: 60px;
+            width: 925px;
+            padding: 50px;
+
+            background-color: rgba($primaryWhite, .96);
         }
 
         &__highlight {
@@ -41,8 +43,9 @@
                 align-items: center;
                 width: 60%;
                 height: 100%;
-                padding-left: 0;
                 margin: 0 auto;
+                padding-left: 0;
+
                 text-align: center;
             }
             
@@ -68,10 +71,10 @@
         }
 
         &__container {
-            width: 100%;
-            max-width: 570px;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            max-width: 570px;
             margin: 40px 0;
             padding: 90px 0;
         }
@@ -97,9 +100,9 @@
             &--subscribe {
                 width: 100%;
                 margin-bottom: 0px;
+
                 text-align: left;
                 
-        
                 h4 {
                     margin-bottom: 5px;
                 }
@@ -116,8 +119,9 @@
 
         &__social {
             justify-content: center;
-            text-align: center;
+
             font-size: 1.2rem;
+            text-align: center;
         }
     }
 }
@@ -131,6 +135,7 @@
     // blog header
     .header--blog {
         height: 500px;
+
         background-size: cover;
         background-position: bottom center;
     }
@@ -183,23 +188,26 @@
 
     // VERTICAL LINES
     .vertical-line {
-        height: 100px;
         top: calc((-100px/2));
+        
+        height: 100px;
     }
 
     // HOME PAGE
     .home-branding {
         &__img-container {
-            background-size: contain;
-            background-repeat: no-repeat;
             width: 60vw;
             height: calc(60vw * .5714);
             margin: 160px 0 80px 0;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
 
             img {
-                width: calc(60vw - 60%);
-                left: calc(60vw - 116%);
                 top: calc(60vw - 202%);
+                left: calc(60vw - 116%);
+
+                width: calc(60vw - 60%);
             }
         }
 
@@ -241,19 +249,18 @@
 
         &__info {
             flex-wrap: wrap-reverse;
-            border-bottom: none;
             justify-content: flex-start;
             margin-top: 20px;
             padding-bottom: 10px;
-            
+            border-bottom: none;
         }
 
         &__attr {
-            margin: 0 0 70px 0;
-            width: 98%;
             justify-content: flex-start;
-            border-bottom: $borderStyle;
+            width: 98%;
+            margin: 0 0 70px 0;
             padding-bottom: 25px;
+            border-bottom: $borderStyle;
             
             li {
                 margin-right: 40px;
@@ -283,11 +290,12 @@
         align-items: center;
         
         li {
-            border-right: none;
-            border-bottom: $borderStyle;
-            text-align: center;
             width: 100%;
             max-width: 236px;
+            border-right: none;
+            border-bottom: $borderStyle;
+
+            text-align: center;
             
             &:last-of-type {
                 border-bottom: none;
@@ -304,9 +312,10 @@
 @media (max-width: 650px) {
     // HEADER 
     .header--home {
+        height: 345px;
+
         background-size: cover;
         background-position: bottom center;
-        height: 345px;
     }
     
     // COMMENT FORM 
@@ -318,10 +327,10 @@
     .home-carousel {
 
         &__container {
-        align-items: center;
-        padding: 40px 0;
-        align-items: flex-start;
-        position: relative;
+            position: relative;
+
+            align-items: flex-start;
+            padding: 40px 0;
         }
 
         &__btn {
@@ -335,11 +344,12 @@
         
         &__item {
             width: 90vw;
+
             font-size: .7rem;
             
             img {
-                margin-bottom: 40px;
                 width: 200px;
+                margin-bottom: 40px;
             }
         }
     }
@@ -357,9 +367,8 @@
     // FOOTER
     .footer {
         &__nav {
-            max-width: 535px;
             justify-content: center;
-        
+            max-width: 535px;
         }
 
         &__nav-container {
@@ -385,11 +394,13 @@
     // blog header 
     .header--blog {
         height: auto;
+
         background-image: none;
 
         .mobile-bg{
-            background-image: url('../assets/blog-1.jpeg');
             height: 250px;
+            
+            background-image: url('../assets/blog-1.jpeg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -434,8 +445,9 @@
 
         &__author-info--mobile {
             display: block;
-            text-align: left;
             margin-left: 10px;
+
+            text-align: left;
         }
     
         &__comments-container {
@@ -455,9 +467,10 @@
         }
         
         &__text-container::before {
-            transform: rotate(270deg);
             left: 22px;
             bottom: -12px;
+
+            transform: rotate(270deg);
         }
     }
 }
@@ -471,6 +484,7 @@
         &__highlight {
             flex-direction: column;
             align-items: center;
+
             text-align: center;
         }
 
@@ -479,9 +493,9 @@
         }
 
         &__text {
+            width: 80%;
             margin-left: 0;
             margin-top: 20px;
-            width: 80%;
         }
     }
 
@@ -510,6 +524,7 @@
     .blog-post {
         h2 {
             margin-top: 40px;
+
             font-size: 2.2rem;
         }
 
@@ -530,10 +545,12 @@
     // CONTACT PAGE
     .contact {
         h2 {
-            font-size: 2.4rem;
+            top: -72px;
+
             width: 100%;
             max-width: 260px;
-            top: -72px;
+            
+            font-size: 2.4rem;
 
             &::before {
                 margin-bottom: 30px;
