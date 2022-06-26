@@ -757,18 +757,16 @@ ul {
   font-weight: 500;
 }
 
-footer {
+.footer {
   background-color: #333;
   color: #fff;
 }
-
-.footer-main {
+.footer__main {
   padding: 110px 0;
   max-width: 1465px;
   margin: 0 auto;
 }
-
-.footer-navigation {
+.footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,56 +779,56 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.footer-navigation .container {
+.footer__nav-container {
   height: 215px;
 }
-.footer-navigation .container li:first-of-type {
+.footer__nav-container li:first-of-type {
   list-style: none;
 }
-.footer-navigation .container h4 {
+.footer__nav-container h4 {
   margin-bottom: 40px;
 }
-.footer-navigation .footer-recent-posts h4 {
+.footer__nav-container--recent-posts h4 {
   text-align: center;
 }
-.footer-navigation .footer-recent-posts li {
+.footer__nav-container--recent-posts li {
   list-style: disc;
   margin-bottom: 10px;
 }
-.footer-navigation .footer-subscribe {
+.footer__nav-container--subscribe {
   text-align: right;
 }
-.footer-navigation .footer-subscribe p {
+.footer__nav-container--subscribe p {
   margin-bottom: 40px;
 }
-.footer-navigation .footer-subscribe input {
+.footer__nav-container--subscribe input {
   width: 220px;
   position: relative;
   left: 4px;
   top: -0.5px;
 }
-.footer-navigation .footer-subscribe input:focus-visible {
+.footer__nav-container--subscribe input:focus-visible {
   outline: none;
 }
-.footer-navigation .footer-subscribe input:focus-visible::-webkit-input-placeholder {
+.footer__nav-container--subscribe input:focus-visible::-webkit-input-placeholder {
   opacity: 1;
 }
-.footer-navigation .footer-subscribe input:focus-visible::-moz-placeholder {
+.footer__nav-container--subscribe input:focus-visible::-moz-placeholder {
   opacity: 1;
 }
-.footer-navigation .footer-subscribe input:focus-visible:-ms-input-placeholder {
+.footer__nav-container--subscribe input:focus-visible:-ms-input-placeholder {
   opacity: 1;
 }
-.footer-navigation .footer-subscribe input:focus-visible::-ms-input-placeholder {
+.footer__nav-container--subscribe input:focus-visible::-ms-input-placeholder {
   opacity: 1;
 }
-.footer-navigation .footer-subscribe input:focus-visible::placeholder {
+.footer__nav-container--subscribe input:focus-visible::placeholder {
   opacity: 1;
 }
-.footer-navigation .footer-subscribe input:focus {
+.footer__nav-container--subscribe input:focus {
   outline: auto;
 }
-.footer-navigation .footer-subscribe button {
+.footer__nav-container--subscribe button {
   background-color: #C3DAB7;
   height: 48px;
   width: 48px;
@@ -838,21 +836,19 @@ footer {
   margin: 0;
   font-size: 0.9rem;
 }
-
-.footer-social {
+.footer__social {
   text-align: left;
   font-size: 0.8rem;
 }
-.footer-social a {
+.footer__social a {
   margin-right: 15px;
 }
-
-.footer-logo {
+.footer__logo {
   border-top: 1px solid rgba(250, 250, 250, 0.15);
   width: 100%;
   padding: 75px;
 }
-.footer-logo a {
+.footer__logo a {
   font-size: 0.75rem;
   letter-spacing: 6px;
 }
@@ -1508,11 +1504,10 @@ footer {
     padding: 90px 0;
   }
 
-  .footer-main {
+  .footer__main {
     padding-bottom: 80px;
   }
-
-  .footer-navigation {
+  .footer__nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1522,25 +1517,24 @@ footer {
     max-width: 655px;
     margin: 0 auto;
   }
-  .footer-navigation .container {
+  .footer__nav-container {
     margin-bottom: 80px;
   }
-  .footer-navigation .footer-subscribe {
+  .footer__nav-container--subscribe {
     width: 100%;
     margin-bottom: 0px;
     text-align: left;
   }
-  .footer-navigation .footer-subscribe h4 {
+  .footer__nav-container--subscribe h4 {
     margin-bottom: 5px;
   }
-  .footer-navigation .footer-subscribe p {
+  .footer__nav-container--subscribe p {
     margin-bottom: 20px;
   }
-  .footer-navigation .footer-subscribe input {
+  .footer__nav-container--subscribe input {
     width: 90%;
   }
-
-  .footer-social {
+  .footer__social {
     text-align: center;
     font-size: 1.2rem;
   }
@@ -1743,19 +1737,19 @@ footer {
     margin-bottom: 20px;
   }
 
-  .footer-navigation {
+  .footer__nav {
     max-width: 535px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer-navigation .footer-contact-info li {
+  .footer__nav-container--contact-info li {
     text-align: center;
   }
-  .footer-navigation .footer-subscribe {
+  .footer__nav-container--subscribe {
     margin-top: 40px;
   }
-  .footer-navigation .footer-subscribe input {
+  .footer__nav-container--subscribe input {
     width: 80%;
   }
 }

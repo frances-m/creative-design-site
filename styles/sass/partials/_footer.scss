@@ -1,22 +1,23 @@
-footer {
+.footer {
     background-color: $black;
     color: $primaryWhite;
-}
 
-// Top Footer Section
-.footer-main {
-    padding: 110px 0;
-    max-width: 1465px;
-    margin: 0 auto;
-}
+    // Top Footer Section
+    &__main {
+        padding: 110px 0;
+        max-width: 1465px;
+        margin: 0 auto;
+    }
 
-.footer-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
 
-    .container {
+    &__nav-container {
         height: 215px;
 
         li:first-of-type {
@@ -26,75 +27,78 @@ footer {
         h4 {
             margin-bottom: 40px;
         }
-    }
 
-    .footer-recent-posts {
-        h4 {
-            text-align: center;
-        }
-
-        li {
-            list-style: disc;
-            margin-bottom: 10px;
-        }
-
-    }
+        &--recent-posts {
+            h4 {
+                text-align: center;
+            }
     
-    .footer-subscribe {
-        text-align: right;
-
-        p {
-            margin-bottom: 40px;
+            li {
+                list-style: disc;
+                margin-bottom: 10px;
+            }
         }
 
-        input {
-            width: 220px;
-            // ??? is this a good way to position this input?
-            position: relative;
-            left: 4px;
-            top: -.5px;
-
-            &:focus-visible {
-                outline: none;
-
-                &::placeholder {
-                    opacity: 1;
+        &--subscribe {
+            text-align: right;
+    
+            p {
+                margin-bottom: 40px;
+            }
+    
+            input {
+                width: 220px;
+                // ??? is this a good way to position this input?
+                position: relative;
+                left: 4px;
+                top: -.5px;
+    
+                &:focus-visible {
+                    outline: none;
+    
+                    &::placeholder {
+                        opacity: 1;
+                    }
+                }
+                
+                &:focus {
+                    outline: auto;
                 }
             }
-            
-            &:focus {
-                outline: auto;
+    
+            button {
+                background-color: $lightSage;
+                height: 48px;
+                width: 48px;
+                padding: 0;
+                margin: 0;
+                font-size: .9rem;
             }
         }
+    }
 
-        button {
-            background-color: $lightSage;
-            height: 48px;
-            width: 48px;
-            padding: 0;
-            margin: 0;
-            font-size: .9rem;
+    &__social {
+        text-align: left;
+        font-size: .8rem;
+    
+        a {
+            margin-right: 15px;
         }
     }
 
-}
-
-.footer-social {
-    text-align: left;
-    font-size: .8rem;
-
-    a {
-        margin-right: 15px;
+    // Bottom Footer Section
+    &__logo {
+        border-top: 1px solid rgba(250, 250, 250, .15);
+        width: 100%;
+        padding: 75px;
+    
+        a {
+            font-size: .75rem;
+            letter-spacing: 6px;
+        }
     }
 }
 
-.footer-logo {
-    border-top: 1px solid rgba(250, 250, 250, .15);
-    width: 100%;
-    padding: 75px;
 
-    a {
-        font-size: .75rem;
-        letter-spacing: 6px;
-    }
-}
+
+

@@ -78,44 +78,46 @@
     }
 
     // FOOTER 
-    .footer-main {
-        padding-bottom: 80px;
-    }
-    
-    .footer-navigation {
-        justify-content: space-between;
-        align-items:flex-start;
-        max-width: 655px;
-        margin: 0 auto;
-    
-        .container {
+    .footer {
+
+        &__main {
+            padding-bottom: 80px;
+        }
+
+        &__nav {
+            justify-content: space-between;
+            align-items:flex-start;
+            max-width: 655px;
+            margin: 0 auto;   
+        }
+
+        &__nav-container {
             margin-bottom: 80px;
+
+            &--subscribe {
+                width: 100%;
+                margin-bottom: 0px;
+                text-align: left;
+                
+        
+                h4 {
+                    margin-bottom: 5px;
+                }
+        
+                p {
+                    margin-bottom: 20px;
+                }
+        
+                input {
+                    width: 90%;
+                }
+            }
         }
-    
-        .footer-subscribe {
-            width: 100%;
-            margin-bottom: 0px;
-            text-align: left;
-            
-    
-            h4 {
-                margin-bottom: 5px;
-            }
-    
-            p {
-                margin-bottom: 20px;
-            }
-    
-            input {
-                width: 90%;
-            }
+
+        &__social {
+            text-align: center;
+            font-size: 1.2rem;
         }
-    
-    }
-    
-    .footer-social {
-        text-align: center;
-        font-size: 1.2rem;
     }
 }
     
@@ -349,21 +351,26 @@
     }
 
     // FOOTER
-    .footer-navigation {
-        max-width: 535px;
-        justify-content: center;
-    
-        .footer-contact-info {
-            li {
-                text-align: center;
-            }
+    .footer {
+        &__nav {
+            max-width: 535px;
+            justify-content: center;
+        
         }
-    
-        .footer-subscribe {
-            margin-top: 40px;
-    
-            input {
-                width: 80%;
+
+        &__nav-container {
+            &--contact-info {
+                li {
+                    text-align: center;
+                }
+            }
+        
+            &--subscribe {
+                margin-top: 40px;
+        
+                input {
+                    width: 80%;
+                }
             }
         }
     }
