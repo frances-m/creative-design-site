@@ -15,7 +15,7 @@
 
         li {
             padding-right: 5px;
-            opacity: .6;
+            opacity: $textOpacity;
         }
         
         li::before {
@@ -43,7 +43,7 @@
     
     
         p {
-            opacity: .6;
+            opacity: $textOpacity;
 
             font-size: .64rem;
             letter-spacing: .1px;
@@ -81,7 +81,7 @@
         p {
             margin-bottom: 24px;
 
-            opacity: .6;
+            opacity: $textOpacity;
 
             font-size: .71rem;
             font-weight: 400;
