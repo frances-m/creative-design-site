@@ -76,12 +76,12 @@
     }
 
     &__comment-text {
-        opacity: .7;
+        opacity: .8;
         letter-spacing: .45px;
     }
 
     &__time-stamp {
-        opacity: .6;
+        opacity: $textOpacity;
         
         font-family: $headingFont;
         font-size: .6rem;
