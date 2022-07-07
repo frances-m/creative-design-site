@@ -1,13 +1,18 @@
 .header {
+    display: flex;
+    justify-content: center;
+
     .wrapper {
-        display: flex;
-        justify-content: center;
-        position: relative;
+        width: 100vw;
+        max-width: unset;
+        height: 120px;
+        z-index: 2;
+
+        transition: .5s;
     }
 
     // Nav bar
     &__nav-bar {
-        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,11 +20,12 @@
         max-width: 1190px;
         margin: 0 auto;
         padding: 46px 0 38px 0;
-        z-index: 1;
+        z-index: 2;
     }
 
     h1 {
         padding: 0 10px;
+
 
         a:focus-visible {
             background: $focusBackground;
@@ -106,6 +112,7 @@
                 background-color: $lightSage;
                 
                 font-size: .45rem;
+                z-index: 5;
             }
         }
     }
@@ -114,20 +121,18 @@
 // Mobile Nav Bar
 .header__nav-bar--mobile {
     display: none;
+    height: 80px;
+    padding: 0;
 
     h1 {
-        height: 36px;
-        padding: 0;
-    }
-
-    label {
-        cursor: pointer;
+        padding: 0 10px;
     }
 }
 
+
 .slide-nav {
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     left: -1000px;
 
@@ -229,8 +234,9 @@
 
     &--contact {
         background-color: $primaryWhite;
-        
+
         .display-img {
+            width: 100vw;
             height: 224px;
             
             background-image: url('../assets/contact-1.jpeg');

@@ -507,17 +507,23 @@ address {
     opacity: 1;
   }
 }
-.header .wrapper {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+}
+.header .wrapper {
+  width: 100vw;
+  max-width: unset;
+  height: 120px;
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .header__nav-bar {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,7 +537,7 @@ address {
   max-width: 1190px;
   margin: 0 auto;
   padding: 46px 0 38px 0;
-  z-index: 1;
+  z-index: 2;
 }
 .header h1 {
   padding: 0 10px;
@@ -616,22 +622,21 @@ address {
   border-radius: 50%;
   background-color: #C3DAB7;
   font-size: 0.45rem;
+  z-index: 5;
 }
 
 .header__nav-bar--mobile {
   display: none;
-}
-.header__nav-bar--mobile h1 {
-  height: 36px;
+  height: 80px;
   padding: 0;
 }
-.header__nav-bar--mobile label {
-  cursor: pointer;
+.header__nav-bar--mobile h1 {
+  padding: 0 10px;
 }
 
 .slide-nav {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   top: 0;
   left: -1000px;
   width: 100vw;
@@ -713,6 +718,7 @@ address {
   background-color: #fff;
 }
 .header--contact .display-img {
+  width: 100vw;
   height: 224px;
   background-image: url("../assets/contact-1.jpeg");
   background-size: cover;
@@ -1629,6 +1635,10 @@ address {
   }
 }
 @media (max-width: 804px) {
+  .header .wrapper {
+    height: 84px;
+  }
+
   .header__nav-bar--desktop {
     display: none;
   }
