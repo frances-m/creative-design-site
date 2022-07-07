@@ -1,13 +1,21 @@
 .header {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 
     // Nav bar
     &__nav-bar {
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 90vw;
         max-width: 1190px;
         margin: 0 auto;
         padding: 46px 0 38px 0;
+        z-index: 1;
     }
 
     h1 {

@@ -507,7 +507,17 @@ address {
     opacity: 1;
   }
 }
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
 .header__nav-bar {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,9 +527,11 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90vw;
   max-width: 1190px;
   margin: 0 auto;
   padding: 46px 0 38px 0;
+  z-index: 1;
 }
 .header h1 {
   padding: 0 10px;
