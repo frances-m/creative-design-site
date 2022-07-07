@@ -581,7 +581,7 @@ address {
 }
 .header .hover-style {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 55%;
   width: 100%;
   height: 1px;
@@ -632,6 +632,7 @@ address {
 }
 .header__nav-bar--mobile h1 {
   padding: 0 10px;
+  z-index: 3;
 }
 
 .slide-nav {
@@ -646,13 +647,13 @@ address {
 }
 .slide-nav__links {
   position: absolute;
-  top: 90px;
-  left: 5vw;
+  top: 70px;
+  left: 7vw;
   opacity: 0;
   color: #F6F6F6;
 }
 .slide-nav__links li {
-  width: 91vw;
+  width: 89vw;
 }
 .slide-nav__links a {
   font-size: 1.3rem;
@@ -677,24 +678,22 @@ address {
 .slide-nav__link-container {
   padding: 0 0 25px 0;
 }
-.slide-nav__toggle-btn {
-  position: absolute !important;
-  opacity: 0 !important;
-}
-.slide-nav__toggle-btn:checked ~ .slide-nav {
+
+.open-slide-out .slide-nav {
   left: 0;
 }
-.slide-nav__toggle-btn:checked ~ section ul {
-  opacity: 1;
-  -webkit-animation: delay-opacity 0.75s ease-in-out;
-          animation: delay-opacity 0.75s ease-in-out;
-}
-.slide-nav__toggle-btn:checked ~ label, .slide-nav__toggle-btn:checked ~ h1 {
+.open-slide-out #slide-out-btn,
+.open-slide-out h1 {
   z-index: 4;
   color: #F6F6F6;
 }
-.slide-nav__toggle-btn:focus-visible ~ label {
+.open-slide-out #slide-out-btn:focus-visible {
   outline: #a3d489 solid 4px;
+}
+.open-slide-out .slide-nav__links {
+  opacity: 1;
+  -webkit-animation: delay-opacity 0.75s ease-in-out;
+          animation: delay-opacity 0.75s ease-in-out;
 }
 
 .header .transition {
