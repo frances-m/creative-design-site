@@ -627,7 +627,6 @@ address {
 
 .header__nav-bar--mobile {
   display: none;
-  height: 80px;
   padding: 0;
 }
 .header__nav-bar--mobile h1 {
@@ -647,7 +646,7 @@ address {
 }
 .slide-nav__links {
   position: absolute;
-  top: 70px;
+  top: 90px;
   left: 7vw;
   opacity: 0;
   color: #F6F6F6;
@@ -1635,7 +1634,9 @@ address {
 }
 @media (max-width: 804px) {
   .header .wrapper {
-    height: 84px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .header__nav-bar--desktop {
