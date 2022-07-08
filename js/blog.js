@@ -46,6 +46,7 @@
         commentFormValues.date = formattedDate;
     
         // create the HTML elements to be appended to the comments container element
+        // on a real site, i would make sure that the user input being added to the page was sanitized before using innerHTML, but I think innerHTML is my best option when adding a chunk of HTML like this
         const commentToAdd = `
             <div class="blog-comments__comment">
                 <div class="blog-comments__img-container">

@@ -162,7 +162,7 @@
     
     &__btn-container {
         padding-bottom: 8px;
-        text-align: right;    
+        text-align: right;  
     }
     
     &__btn {
@@ -187,9 +187,10 @@
         padding: 0 0 25px 0;
     }
 
-
 }
 
+
+// class to toggle when the mobile hamburger menu is clicked
 .open-slide-out {
     .slide-nav {
         left: 0;
@@ -216,6 +217,84 @@
     transition-timing-function: linear;
 }
 
+// SEARCH BAR
+
+#search {
+    position: absolute;
+    left: 10px;
+
+    display: none;
+    width: 0;
+    height: 38px;
+    border-radius: 20px;
+
+    background-color: rgba($primaryWhite, 0.8);
+
+    &:focus {
+        outline: #a3d489 solid 3px;
+    }
+}
+
+#search-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+
+    transition: .5s;
+}
+
+#search-btn {
+    z-index: 5;
+    transition: .8s;
+}
+
+.search-bar__collapse {
+    transition: .5s;
+}
+
+// class to toggle when the search bar is clicked
+.search-bar {
+
+    #search {
+        display: block;
+        width: 100%;
+        animation: search-slide-in .5s linear;
+        
+        transition: .5s;
+        z-index: 1;
+    }
+
+    #search-btn {
+        transform: translateX(130%);
+    }
+
+    .search-bar__collapse {
+        opacity: 0;
+    }
+
+    .header__nav-container--right {
+        position: relative;
+    }
+
+    .header__nav-bar--mobile {
+
+        #search {
+            position: relative;
+            left: 35px;
+            width: 280px;
+            animation-name: search-slide-in-mobile;
+            background-color: $secondaryWhite !important;
+        }
+
+        #search-container .fa-solid {
+            color: $black;
+        }
+
+        #search-btn {
+            transform: none;
+        }
+    }
+}
 
 // Unique page styles
 .header {

@@ -7,6 +7,10 @@ const addStyles = (element, style) => {
     }
 }
 
+// re-used selectors
+const header = document.querySelector("header");
+const searchInput = document.querySelector("#search");
+
 
 /*** NAV ***/
 
@@ -35,15 +39,18 @@ mainNav.forEach((navBar) => {
         addStyles(navBar, {"backgroundColor": "white", "box-shadow": "0 2px 20px rgba(0,0,0,.2)"});
         addStyles(document.querySelector('header .display-img'), {"position": "relative", "top": "120px"});
         addStyles(document.querySelector('.contact h2'), {"position": "relative", "top": "40px"});
+        addStyles(searchInput, {"background-color": "rgba(51, 51, 51, .05)"});
     } else {
         // on the other pages, add a scroll event listener
         document.addEventListener('scroll', () => {
             if (window.scrollY === 0) {
                 // if the scroll position is 0, set the navBar backgroundColor to be transparent...
                 addStyles(navBar, {"backgroundColor": "transparent", "box-shadow": "none"});
+                addStyles(searchInput, {"background-color": "white"});
             } else {
                 // otherwise, set the navBar backgroundColor to be white
                 addStyles(navBar, {"backgroundColor": "white", "box-shadow": "0 2px 20px rgba(0,0,0,.2)"});
+                addStyles(searchInput, {"background-color": "rgba(51, 51, 51, .05)"});
             }
         });
     }
@@ -56,7 +63,6 @@ mainNav.forEach((navBar) => {
     // toggle a class on the header that contains relevant styling
 
 const slideOutBtn = document.querySelector("#slide-out-btn");
-const header = document.querySelector("header");
 
 slideOutBtn.addEventListener('click', () => {
     header.classList.toggle("open-slide-out");
@@ -64,7 +70,16 @@ slideOutBtn.addEventListener('click', () => {
 
 
 /* Search Bar */
+/* PSUEDOCODE */
+// when a user clicks on the #search-btn...
+    // toggle a class on the header that contains relevant styling
 
+const searchBtns = document.querySelectorAll("#search-btn");
 
+searchBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        header.classList.toggle("search-bar");
+    });
+});
 
 
