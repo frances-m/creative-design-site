@@ -306,6 +306,13 @@
     &--blog {
         background-image: url('../assets/blog-1.jpeg');
         @include fullbleed-height(900);
+
+        .mobile-bg {
+            position: relative;
+            top: 120px;
+
+            width: 100vw;
+        }
     }
 
     &--contact {

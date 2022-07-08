@@ -72,4 +72,7 @@
     
         // append the new comment to the comment's container
         commentsContainer.innerHTML += commentToAdd;
+
+        // clear the form inputs
+        commentForm.reset();
     });

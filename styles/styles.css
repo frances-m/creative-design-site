@@ -839,6 +839,11 @@ address {
   height: 46.875vw;
   background-size: contain;
 }
+.header--blog .mobile-bg {
+  position: relative;
+  top: 120px;
+  width: 100vw;
+}
 .header--contact {
   background-color: #fff;
 }
