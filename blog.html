@@ -50,21 +50,22 @@
                 <!-- Right nav elements -->
                 <div class="header__nav-container header__nav-container--right">
                     
-                    <div class="header__link-container">
+                    <div class="header__link-container search-bar__collapse">
                         <a class="heading heading--nav" href="#">Shop</a>
                         <div class="hover-style"></div>
                     </div>
                     
-                    <div class="header__link-container">
+                    <div class="header__link-container search-bar__collapse">
                         <a class="heading heading--nav" href="./contact.html">Contact</a>
                         <div class="hover-style"></div>
                     </div>
-                    
-                    <button class="header__btn header__btn--search" type="button" aria-label="search">
+
+                    <input type="text" name="search" id="search" />
+                    <button class="header__btn header__btn--search" type="button" id="search-btn" aria-label="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     
-                    <button class="header__btn header__btn--shopping-bag" class="shopping-bag" type="button" aria-label="shopping cart">
+                    <button class="header__btn header__btn--shopping-bag shopping-bag search-bar__collapse" type="button" aria-label="shopping cart">
                         <i class="fa-solid fa-bag-shopping"></i>
                         <p>2</p>
                     </button>
@@ -77,8 +78,10 @@
                 <!-- Slide out nav -->
                 <section class="slide-nav transition">
                     <ul class="slide-nav__links">
-                        <li class="slide-nav__btn-container">
-                            <button class="slide-nav__btn header__btn transition" type="button" aria-label="search">
+                        <li class="slide-nav__btn-container" id="search-container">
+
+                            <input type="text" name="search" id="search" />
+                            <button class="slide-nav__btn header__btn transition" type="button" id="search-btn" aria-label="search">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </li>
