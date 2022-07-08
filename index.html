@@ -60,7 +60,7 @@
                         <div class="hover-style"></div>
                     </div>
 
-                    <button class="header__btn" type="button" aria-label="search">
+                    <button class="header__btn header__btn--search" type="button" aria-label="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
 
@@ -150,22 +150,22 @@
 
                 <!-- Gallery Carousel -->
                 <div class="home-carousel__container">
-                    <button class="home-carousel__btn home-carousel__btn--left" aria-label="next item">
-                        <i class="fa-solid fa-angle-left"></i>
+                    <button class="home-carousel__btn home-carousel__btn--left left-arrow" aria-label="next item">
+                        <i class="fa-solid fa-angle-left left-arrow"></i>
                     </button>
 
                     <ul class="home-carousel__item">
                         <li>
                             <!-- ??? In this case, the alt probably wasn't too important but I decided to put this in an img element because presumably the carousel images would be relevant to their associated text -->
-                            <img src="./assets/home-3.jpeg" alt="a collection of design documents. in the center is a documnet featuring illegible text and a photo of a person">
+                            <img id="carousel-img" src="./assets/carousel-1.jpeg" alt="a collection of design documents. in the center is a documnet featuring illegible text and a photo of a person">
                         </li>
                         <li>
-                            <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
+                            <p id="carousel-text">Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
                         </li>
                     </ul>
 
-                    <button class="home-carousel__btn home-carousel__btn--right" aria-label="back an item">
-                        <i class="fa-solid fa-angle-right"></i>
+                    <button class="home-carousel__btn home-carousel__btn--right right-arrow" aria-label="back an item">
+                        <i class="fa-solid fa-angle-right right-arrow"></i>
                     </button>
                 </div> <!-- END home-carousel__container -->
             </div> <!-- END wrapper -->
