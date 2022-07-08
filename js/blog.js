@@ -60,7 +60,7 @@
                         <p class="blog-comments__author-name heading">${commentFormValues.authorName} - <a href="#" class="blog-comments__reply-btn">Reply</a></p>
                     </li>
                     <li>
-                        ${commentFormValues.subject}
+                        ${commentFormValues.subject ? commentFormValues.subject : ""}
                         <p class="blog-comments__comment-text">${commentFormValues.commentText}</p>
                     </li>
                     <li class="blog-comments__author-info--desktop">
