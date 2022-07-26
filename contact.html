@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="./styles/styles.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
     <script src="https://kit.fontawesome.com/ba68b7fb9a.js" crossorigin="anonymous"></script>
 </head>
@@ -50,21 +50,22 @@
                 <!-- Right nav elements -->
                 <div class="header__nav-container header__nav-container--right">
 
-                    <div class="header__link-container">
+                    <div class="header__link-container search-bar__collapse">
                         <a class="heading heading--nav" href="#">Shop</a>
                         <div class="hover-style"></div>
                     </div>
 
-                    <div class="header__link-container">
+                    <div class="header__link-container search-bar__collapse">
                         <a class="heading heading--nav" href="#">Contact</a>
                         <div class="hover-style"></div>
                     </div>
 
-                    <button class="header__btn" type="button" aria-label="search">
+                    <input type="text" name="search" id="search" />
+                    <button class="header__btn header__btn--search" type="button" id="search-btn" aria-label="search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
 
-                    <button class="header__btn header__btn--shopping-bag" class="shopping-bag" type="button" aria-label="shopping cart">
+                    <button class="header__btn header__btn--shopping-bag shopping-bag search-bar__collapse" type="button" aria-label="shopping cart">
                         <i class="fa-solid fa-bag-shopping"></i>
                         <p>2</p>
                     </button>
@@ -76,11 +77,11 @@
             <nav class="header__nav-bar header__nav-bar--mobile">
                 
                 <!-- Slide out nav -->
-                <input class="slide-nav__toggle-btn" type="checkbox" id="slide-out-menu">
                 <section class="slide-nav transition">
                     <ul class="slide-nav__links">
-                        <li class="slide-nav__btn-container">
-                            <button class="slide-nav__btn header__btn transition" type="button" aria-label="search">
+                        <li class="slide-nav__btn-container" id="search-container">
+                            <input type="text" name="search" id="search" />
+                            <button class="slide-nav__btn header__btn transition" type="button" aria-label="search" id="search-btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </li>
@@ -113,11 +114,9 @@
                 <h1 class="heading heading--bold transition"><a href="#">Creative</a></h1>
                 
                 <!-- Hamburger Menu -->
-                <label class="header__btn transition" for="slide-out-menu">
-                    <div>
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </label>
+                <button id="slide-out-btn" type="button" class="header__btn transition"  aria-label="open slide out navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </nav>  
         </div> <!-- END wrapper -->
                 
@@ -305,5 +304,7 @@
             <a class="heading" href="./index.html">Creative Agency</a>
         </section>
     </footer>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

@@ -165,6 +165,12 @@
 
     // HEADER 
     // mobile nav
+    .header {
+        .wrapper{ 
+            display: flex;
+        }
+    }
+
     .header__nav-bar {
 
         &--desktop {
