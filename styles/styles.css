@@ -1644,7 +1644,6 @@ address {
   .header--contact .display-img {
     height: 150px;
   }
-
   .home-team__gallery {
     grid-template: repeat(3, 270px)/repeat(3, 270px);
   }
@@ -1674,7 +1673,6 @@ address {
   .home-team__players h3 {
     padding-top: 0px;
   }
-
   .contact h2 {
     top: -85px;
   }
@@ -1700,7 +1698,6 @@ address {
     margin: 40px 0;
     padding: 90px 0;
   }
-
   .footer__main {
     padding-bottom: 80px;
   }
@@ -1743,17 +1740,14 @@ address {
   .header__nav-container {
     width: 227px;
   }
-
   .header--blog {
     height: 500px;
     background-size: cover;
     background-position: bottom center;
   }
-
   .header--contact .display-img {
     background-position: 32% 50%;
   }
-
   .home-team__gallery {
     grid-template: repeat(4, 270px)/repeat(2, 270px);
   }
@@ -1770,7 +1764,6 @@ address {
     display: -ms-flexbox;
     display: flex;
   }
-
   .header__nav-bar--desktop {
     display: none;
   }
@@ -1779,20 +1772,16 @@ address {
     display: -ms-flexbox;
     display: flex;
   }
-
   .header--contact .display-img {
     background-position: 20% 50%;
   }
-
   .comment-form button {
     margin-bottom: 100px;
   }
-
   .vertical-line {
     top: -50px;
     height: 100px;
   }
-
   .home-branding__img-container {
     width: 60vw;
     height: 34.284vw;
@@ -1820,7 +1809,6 @@ address {
     width: 45%;
     margin: 0 auto;
   }
-
   .home-portfolio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1835,7 +1823,6 @@ address {
     background-size: cover;
     background-position: center;
   }
-
   .blog-post__info {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -1870,7 +1857,6 @@ address {
   .blog-post__content {
     margin-top: 0px;
   }
-
   .contact__info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1900,11 +1886,9 @@ address {
     background-size: cover;
     background-position: bottom center;
   }
-
   .comment-form input {
     width: 100%;
   }
-
   .home-carousel__container {
     position: relative;
     -webkit-box-align: start;
@@ -1927,7 +1911,6 @@ address {
     width: 200px;
     margin-bottom: 40px;
   }
-
   .blog-related__posts {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1938,7 +1921,6 @@ address {
   .blog-related__posts li {
     margin-bottom: 20px;
   }
-
   .footer__nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1967,7 +1949,6 @@ address {
     background-position: center;
     background-size: cover;
   }
-
   .home-team .wrapper {
     width: 90%;
   }
@@ -1987,7 +1968,6 @@ address {
     width: 100%;
     height: 100%;
   }
-
   .blog-comments__author-info--desktop {
     display: none;
   }
@@ -2045,7 +2025,6 @@ address {
     margin-left: 0;
     margin-top: 20px;
   }
-
   .home-team__gallery {
     grid-template: 90vw repeat(6, 70vw)/repeat(1, 70vw);
     margin-bottom: 90px;
@@ -2059,12 +2038,13 @@ address {
   .home-team__work-with {
     background-color: #f6f6f6;
   }
-
   .blog-post h2 {
-    margin-top: 40px;
-    font-size: 2.2rem;
+    margin-top: 150px;
+    font-size: 2rem;
+    line-height: 45px;
   }
   .blog-post__breadcrumb {
+    margin-top: 20px;
     font-size: 0.6rem;
   }
   .blog-post__attr li {
@@ -2073,7 +2053,6 @@ address {
   .blog-post__attr li:first-of-type {
     margin-left: 0px;
   }
-
   .contact h2 {
     top: -72px;
     width: 100%;

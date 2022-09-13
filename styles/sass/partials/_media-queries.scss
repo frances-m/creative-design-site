@@ -529,12 +529,14 @@
     // BLOG PAGE
     .blog-post {
         h2 {
-            margin-top: 40px;
+            margin-top: 150px;
 
-            font-size: 2.2rem;
+            font-size: 2rem;
+            line-height: 45px;
         }
 
         &__breadcrumb {
+            margin-top: 20px;
             font-size: .6rem;
         }
 
